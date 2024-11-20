@@ -1,0 +1,46 @@
+---
+import { getCollection } from 'astro:content';
+import { config } from '../../my.config';
+
+// Fetching blog posts
+const posts = (await getCollection('posts'))
+  .sort((a, b) => new Date(b.data.pubDate).getTime()  - new Date(a.data.pubDate).getTime()) // Sort by date
+  .slice(0, 5) // Limit to the last 5 posts
+  .map(post => ({
+    title: post.data.title,
+    link: `/posts/${post.slug}/`,
+    date: new Intl.DateTimeFormat('en-US', {
+      month: 'long',
+      year: 'numeric'
+    }).format(new Date(post.data.pubDate)),
+    isNew: (new Date().getTime() - new Date(post.data.pubDate).getTime()) / (1000 * 60 * 60 * 24) < config.NEW_WINDOW // Mark as "New" if within 30 days
+  }));
+---
+
+<section class="bg-gray-100 py-12">
+    <!-- Outer full-width container with background -->
+    <div class="container mx-auto max-w-5xl px-4">
+      <!-- Inner container for blog posts -->
+      <h2 class="text-2xl font-bold mb-6">Articles</h2>
+      <ul>
+        <!-- Blog Post Item -->
+        {posts.map(post => (
+            <li class="flex justify-between items-center border-b py-4">
+                <!-- Post Title -->
+                <a href={post.link} class="text-lg font-medium text-gray-800 hover:underline flex-1">
+                    {post.title}
+                </a>
+                <!-- Date and New Label -->
+                <div class="flex items-center space-x-2 text-right">
+                    <span class="text-sm text-gray-500">{post.date}</span>
+                    {post.isNew && (
+                    <span class="text-xs bg-gray-200 text-gray-600 px-2 py-1 rounded">New!</span>
+                    )}
+                </div>
+            </li>
+          ))}
+      </ul>
+      <!-- Read More Button -->
+      <a href="/blog" class="block text-blue-500 hover:underline mt-4">Read more »</a>
+    </div>
+  </section>  
