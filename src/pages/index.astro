@@ -1,6 +1,10 @@
 ---
-import BlogPosts from '../components/blogposts.astro';
+import Navigation from '../components/navigation.astro';
+import Hero from '../components/hero.astro';
+import Articles from '../components/articles.astro';
 import Achievements from '../components/achievements.astro';
+import SideQuests from '../components/sidequests.astro';
+import HireMe from '../components/hireme.astro';
 import Footer from '../components/footer.astro';
 ---
 
@@ -14,8 +18,12 @@ import Footer from '../components/footer.astro';
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
 	<body>
-		<BlogPosts />
+		<Navigation />
+		<Hero />
+		<Articles />
 		<Achievements />
+		<SideQuests />
+		<HireMe />
 		<Footer />
 	</body>
 </html>

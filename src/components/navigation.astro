@@ -1,5 +1,75 @@
 ---
 ---
-<a href="/">Home</a>
-<a href="/about/">About</a>
-<a href="/blog/">Blog</a>
+<header class="bg-white text-black">
+    <div class="container max-w-5xl mx-auto px-4 flex items-center justify-between py-4">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <span class="text-lg font-bold">steven.</span>
+      </div>
+  
+      <!-- Navigation Menu -->
+      <nav class="hidden md:flex space-x-6 text-sm font-medium">
+        <a href="/" class="hover:text-gray-300 transition">Home</a>
+        <a href="/articles" class="hover:text-gray-300 transition">Articles</a>
+        <a href="/projects" class="hover:text-gray-300 transition">Projects</a>
+        <a href="/creative" class="hover:text-gray-300 transition">Creative</a>
+        <a href="/contact" class="hover:text-gray-300 transition">Contact</a>
+      </nav>
+  
+      <!-- Social Icons -->
+      <div class="hidden md:flex space-x-4">
+        <a href="#" aria-label="GitHub" class="hover:text-gray-300 transition">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="#" aria-label="LinkedIn" class="hover:text-gray-300 transition">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#" aria-label="Twitter" class="hover:text-gray-300 transition">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#" aria-label="Xbox" class="hover:text-gray-300 transition">
+          <i class="fa-brands fa-xbox"></i>
+        </a>
+      </div>
+  
+      <!-- Mobile Menu Button -->
+      <button id="menu-toggle" class="block md:hidden text-2xl">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="md:hidden hidden bg-gray-100 text-black">
+      <nav class="flex flex-col space-y-4 px-4 py-4">
+        <a href="/" class="hover:text-gray-300 transition">Home</a>
+        <a href="/articles" class="hover:text-gray-300 transition">Articles</a>
+        <a href="/projects" class="hover:text-gray-300 transition">Projects</a>
+        <a href="/creative" class="hover:text-gray-300 transition">Creative</a>
+        <a href="/contact" class="hover:text-gray-300 transition">Contact</a>
+      </nav>
+      <div class="flex justify-center space-x-4 py-4">
+        <a href="#" aria-label="GitHub" class="hover:text-gray-300 transition">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="#" aria-label="LinkedIn" class="hover:text-gray-300 transition">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#" aria-label="Twitter" class="hover:text-gray-300 transition">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#" aria-label="Xbox" class="hover:text-gray-300 transition">
+          <i class="fa-brands fa-xbox"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+  
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  

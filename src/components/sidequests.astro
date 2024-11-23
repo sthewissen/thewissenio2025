@@ -1,0 +1,32 @@
+---
+const items = Array.from({ length: 12 }, (_, index) => ({
+  id: index + 1,
+  src: `https://picsum.photos/${Math.floor(Math.random() * (800 - 400) + 400)}/${Math.floor(Math.random() * (600 - 300) + 300)}?random=${index + 1}`,
+  alt: `Placeholder image ${index + 1}`,
+}));
+---
+<section class="text-center py-12 bg-gray-100">    
+  <div class="container mx-auto max-w-5xl px-4">
+      <h2 class="text-3xl font-bold text-black">Side Quests When I'm Not Coding...</h2>
+      <div class="my-4 w-24 h-1 bg-gray-400 mx-auto"></div>
+      <p class="text-center text-gray-600 mb-8">
+        From digital art to physical props, I love experimenting outside the screen. Here's a peek at some
+        of the creative projects that keep my imagination and hands busy when I'm not buried in code.
+      </p>
+      <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+        {items.map((item) => (
+          <div key={item.id} class="break-inside-avoid overflow-hidden bg-gray-200">
+            <img
+              src={item.src}
+              alt={item.alt}
+              class="w-full h-auto object-cover"
+            />
+          </div>
+        ))}
+      </div>
+
+      <a href="#contact" class="bg-gray-300 font-medium mt-8 px-6 py-3 rounded-lg shadow hover:bg-gray-400 transition inline-block">
+        Show me more...
+      </a>
+    </div>
+  </section>
