@@ -1,6 +1,7 @@
 ---
 title: 'Travelog: Rustig aan...'
 pubDate: 2015-10-21
+slug: travelog-rustig-aan
 tags: ["travel", "dutch"]
 image:
     url: "/images/headers/thailand-03-copy.jpg"

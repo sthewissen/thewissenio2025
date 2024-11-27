@@ -1,6 +1,7 @@
 ---
 title: Building a .NET MAUI CD pipeline in GitHub Actions
 pubDate: 2023-09-28
+slug: making-maui-cd-pipeline
 image:
     url: "/images/headers/pipeline.jpg"
 tags: ["maui", "continuous-delivery", "github-actions"]
@@ -50,7 +51,6 @@ env:
 Due to limitations in the nested workflows infrastructure, we cannot access environment variables from a nested workflow. The solution around that is to create a separate job that takes those environment variables and creates outputs for them. These outputs can then be passed down into the subsequent Android and iOS builds to be used there.
 
 ```yaml
-{% raw %}
 jobs:
   vars:
     runs-on: ubuntu-22.04
@@ -63,7 +63,6 @@ jobs:
       projectFolder: ${{ env.PROJECT_FOLDER }}
     steps:
       - run: echo "Exposing env vars, because they can't be passed to nested workflows."
-{% endraw %}
 ```
 
 ## Calling the iOS workflow
@@ -71,7 +70,6 @@ jobs:
 This section defines an iOS-specific subjob. It depends on the the aforementioned 'vars' job. It specifies the necessary inputs, secrets, and configurations for building iOS applications.
 
 ```yaml
-{% raw %}
 build-ios:   
     needs: vars 
     uses: ./.github/workflows/cd-ios.yml
@@ -89,7 +87,6 @@ build-ios:
       appstore-issuer: ${{ secrets.APPSTORE_ISSUER_ID }}
       appstore-keyid: ${{ secrets.APPSTORE_KEY_ID }}
       appstore-private-key: ${{ secrets.APPSTORE_PRIVATE_KEY }}
-{% endraw %}
 ```
 
 This subjob depends on the `vars` job and uses an external workflow definition from the `cd-ios.yml` YAML file, which will be covered in a future blog post. It passes a set of input variables and secrets required for building an iOS application, including version information, file paths, and security credentials. This separation of concerns helps maintain a clean and modular workflow configuration.
@@ -107,7 +104,6 @@ Paste the output of the above command into a secret called `CERTIFICATES_P12` an
 This section defines an Android-specific subjob. It depends on the the aforementioned 'vars' job. It specifies the necessary inputs, secrets, and configurations for building Android applications.
 
 ```yaml
-{% raw %}
   build-android:
     needs: vars
     uses: ./.github/workflows/cd-android.yml
@@ -123,7 +119,6 @@ This section defines an Android-specific subjob. It depends on the the aforement
       keystore-alias: ${{ secrets.PLAY_KEYSTORE_ALIAS }}
       keystore-password: ${{ secrets.PLAY_KEYSTORE_PASS }}
       playstore-service-account: ${{ secrets.PLAYSTORE_SERVICE_ACC }}
-{% endraw %}
 ```
 
 Most interesting here are the `PLAY_KEYSTORE` and it's `PLAY_KEYSTORE_ALIAS` and `PLAY_KEYSTORE_PASS` secrets. The same applies as before when it comes to the actual keystore file not being compatible with a GitHub secret. In this case, we once again encode it as Base64, but in a way that we can re-construct it later in our pipeline. To do so, we use the following command-line command:

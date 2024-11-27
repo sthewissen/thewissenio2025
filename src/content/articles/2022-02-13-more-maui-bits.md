@@ -1,6 +1,7 @@
 ---
 title: More MAUI bits!
 pubDate: 2022-02-13
+slug: more-maui-bits
 image:
     url: "/images/headers/maui4.jpg"
 tags: ["xamarin","xamarin.forms","maui"]

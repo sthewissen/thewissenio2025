@@ -1,12 +1,14 @@
 ---
 title: DebugRainbows for .NET MAUI now available!
 pubDate: 2024-03-27
+slug: debug-rainbows-rereleased
 image:
     url: "/images/headers/debugrainbows.jpg"
 tags: ["maui", "debugrainbows", "nuget"]
+excerpt: After what seems to have been an eternity of me procrastinating, it's finally time for the comeback of a true debugging superhero - DebugRainbows! 🦸‍♂️
 ---
 
-After what seems to have been an eternity of me procrastinating, it's finally time for the comeback of a true debugging superhero - **DebugRainbows**! 🦸‍♂️ In essence it's a fairly simple NuGet package. Maybe one you didn't even know you needed. But if you've ever found yourself wrestling with XAML layouts, scratching your head over elusive UI elements, or resorting to colorful backgrounds just to understand your layout, then read on because DebugRainbows is about to become your new best friend!
+In essence it's a fairly simple NuGet package. Maybe one you didn't even know you needed. But if you've ever found yourself wrestling with XAML layouts, scratching your head over elusive UI elements, or resorting to colorful backgrounds just to understand your layout, then read on because DebugRainbows is about to become your new best friend!
 
 ## What's this all about?
 
@@ -30,4 +32,4 @@ Getting started with DebugRainbows is as easy as pie! Simply follow these steps:
 
 3. **Marvel at the Magic**: Sit back, relax, and watch as DebugRainbows works its colorful magic on your UI. With rainbow-colored debug modes and a customizable visual grid at your disposal, debugging XAML has never been more fun!
 
-And there you have it - the return of DebugRainbows! Say goodbye to the days of dull debugging routines and hello to a world of vibrant insights. With rainbow-colored debug modes and a customizable visual grid at your disposal, debugging XAML has never been more accessible or enjoyable. So why not give it a try? 🌈
+And there you have it - the return of DebugRainbows! Say goodbye to the days of dull debugging routines and hello to a world of vibrant rainbowy goodness. Debugging that hot mess that is XAML has never been more enjoyable. So why not give it a try? 🌈

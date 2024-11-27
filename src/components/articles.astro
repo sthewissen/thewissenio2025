@@ -44,7 +44,7 @@ const posts = (await getCollection("articles"))
   }));
 ---
 
-<section class="py-12 bg-brand-extra">
+<section id="articles" class="py-12 bg-brand-extra">
   <div class="container mx-auto max-w-5xl px-4">
     <div class="mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
       <!-- Left Column: Featured Article -->
@@ -83,20 +83,20 @@ const posts = (await getCollection("articles"))
             posts.map((article) => (
               <div class="flex items-start">
                 <div class="w-16 h-16 relative overflow-hidden flex-shrink-0">
-                <a href={article.link} class="cursor-pointer">
-                  <img
-                    src={article.image}
-                    alt={article.title}
-                    class="w-16 h-16 object-cover relative transition-all duration-300 hover:scale-110"
-                  />
-                </a>
-              </div>
+                  <a href={article.link} class="cursor-pointer">
+                    <img
+                      src={article.image}
+                      alt={article.title}
+                      class="w-16 h-16 object-cover relative transition-all duration-300 hover:scale-110"
+                    />
+                  </a>
+                </div>
                 <div class="ml-4">
                   <p class="text-sm font-header text-brand uppercase font-semibold">
                     {article.date}
                   </p>
                   <h4 class="text-base font-medium font-header text-gray-900">
-                    <a href={article.link} class="cursor-pointer">
+                    <a href={article.link} class="hover:underline cursor-pointer">
                       {article.title}
                     </a>
                   </h4>

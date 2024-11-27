@@ -8,7 +8,7 @@ import { config } from "../../my.config";
   >
     <!-- Logo -->
     <div class="flex items-center space-x-2">
-      <span class="text-3xl font-bold">steven<span class="text-brand">.</span></span>
+      <a href="/" class="cursor-pointer"><span class="text-3xl font-bold">steven<span class="text-brand">.</span></span></a>
     </div>
 
     <!-- Navigation Menu -->
@@ -20,22 +20,22 @@ import { config } from "../../my.config";
       </p>
       
       <p class="text-lg group hover:text-brand relative">
-        <a href="/articles" class="cursor-pointer text-lg lowercase transition">Articles</a>
+        <a href="/#articles" class="cursor-pointer text-lg lowercase transition">Articles</a>
         <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-brand group-hover:w-3/6"></span>
         <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-brand group-hover:w-3/6"></span>
       </p>
       <p class="text-lg group hover:text-brand relative">
-        <a href="/projects" class="cursor-pointer text-lg lowercase transition">Projects</a>
+        <a href="/#projects" class="cursor-pointer text-lg lowercase transition">Projects</a>
         <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-brand group-hover:w-3/6"></span>
         <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-brand group-hover:w-3/6"></span>
       </p>
       <p class="text-lg group hover:text-brand relative">
-        <a href="/creative" class="cursor-pointer text-lg lowercase transition">Creative</a>
+        <a href="/#creative" class="cursor-pointer text-lg lowercase transition">Creative</a>
         <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-brand group-hover:w-3/6"></span>
         <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-brand group-hover:w-3/6"></span>
       </p>
       <p class="text-lg group hover:text-brand relative">
-        <a href="/contact" class="cursor-pointer text-lg lowercase transition">Contact</a>
+        <a href="/#contact" class="cursor-pointer text-lg lowercase transition">Contact</a>
         <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-brand group-hover:w-3/6"></span>
         <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-brand group-hover:w-3/6"></span>
       </p>
@@ -71,6 +71,14 @@ import { config } from "../../my.config";
       >
         <i class="fa-brands fa-xbox"></i>
       </a>
+      <a
+        href=`${config.SITE_ROOT}/rss.xml`
+        target="_blank"
+        aria-label="RSS Feed"
+        class="hover:text-brand transition"
+      >
+        <i class="fa fa-rss"></i>
+      </a>
     </div>
 
     <!-- Mobile Menu Button -->
@@ -83,10 +91,10 @@ import { config } from "../../my.config";
   <div id="mobile-menu" class="md:hidden hidden bg-brand-extra text-black">
     <nav class="flex flex-col space-y-4 px-4 py-4">
       <a href="/" class="hover:text-brand lowercase cursor-pointer text-lg transition">Home</a>
-      <a href="/articles" class="hover:text-brand lowercase cursor-pointer text-lg transition">Articles</a>
-      <a href="/projects" class="hover:text-brand lowercase cursor-pointer text-lg transition">Projects</a>
-      <a href="/creative" class="hover:text-brand lowercase cursor-pointer text-lg transition">Creative</a>
-      <a href="/contact" class="hover:text-brand lowercase cursor-pointer text-lg transition">Contact</a>
+      <a href="/#articles" class="hover:text-brand lowercase cursor-pointer text-lg transition">Articles</a>
+      <a href="/#projects" class="hover:text-brand lowercase cursor-pointer text-lg transition">Projects</a>
+      <a href="/#creative" class="hover:text-brand lowercase cursor-pointer text-lg transition">Creative</a>
+      <a href="/#contact" class="hover:text-brand lowercase cursor-pointer text-lg transition">Contact</a>
     </nav>
     <div class="flex justify-center space-x-4 py-4">
       <a
@@ -116,6 +124,14 @@ import { config } from "../../my.config";
         class="hover:text-brand transition"
       >
         <i class="fa-brands fa-xbox"></i>
+      </a>
+      <a
+        href=`${config.SITE_ROOT}/rss.xml`
+        target="_blank"
+        aria-label="RSS Feed"
+        class="hover:text-brand transition"
+      >
+        <i class="fa fa-rss"></i>
       </a>
     </div>
   </div>

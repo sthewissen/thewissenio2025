@@ -8,8 +8,6 @@ tags: ["maui", "xamarin"]
 excerpt: As of May 1st, 2024, we have officially bid adieu to Xamarin, marking the end of an era in cross-platform mobile development. Microsoft's decision to discontinue support for Xamarin undoubtedly brings a mix of emotions for developers who have relied on it to create native mobile apps.
 ---
 
-As of May 1st, 2024, we have officially bid adieu to Xamarin, marking the end of an era in cross-platform mobile development. Microsoft's decision to discontinue support for Xamarin undoubtedly brings a mix of emotions for developers who have relied on it to create native mobile apps.
-
 Xamarin emerged as a game-changer in the world of mobile app development, offering the promise of writing code once and deploying it everywhere. To me, that was a premise that instantly clicked. The quirky monkey-obsessed aesthetics around it certainly helped. However, the ability to use C# and the .NET framework, leveraging knowledge I already had, made me fall in love quickly. I can't even begin to compare the early days to where we stand now that we're at the end; so much improvements were made along the way.
 
 ![Xamarin Certified Developer](/images/posts/xamamonks.jpg)

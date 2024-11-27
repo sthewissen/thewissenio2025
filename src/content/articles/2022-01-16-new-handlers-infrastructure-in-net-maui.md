@@ -1,6 +1,7 @@
 ---
 title: The new handlers infrastructure in .NET MAUI
 pubDate: 2022-01-16
+slug: new-handlers-infrastructure-in-net-maui
 image:
     url: "/images/headers/maui2.jpg"
 tags: ["xamarin","xamarin.forms","maui"]

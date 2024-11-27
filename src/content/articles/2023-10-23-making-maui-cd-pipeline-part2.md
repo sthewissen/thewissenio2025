@@ -1,6 +1,7 @@
 ---
-title: GitHub Actions pipeline for .NET MAUI iOS
+title: Building a .NET MAUI iOS pipeline in GitHub Actions
 pubDate: 2023-10-23
+slug: making-maui-cd-pipeline-part2
 image:
     url: "/images/headers/pipeline2.jpg"
 tags: ["maui", "continuous-delivery", "github-actions"]
@@ -12,7 +13,6 @@ Welcome to the second post covering building a GitHub Actions pipeline that can 
 Our first step is to take all the incoming variables and define them in our nested workflow. That way we can use them in the next steps. The same goes for the secrets. We define both of these at the start of our workflow in the `workflow_call` node by defining them with both a type and name.
 
 ```yaml
-{% raw %}
 name: iOS Publish
 
 on:
@@ -50,13 +50,11 @@ on:
         required: true
       appstore-private-key:
         required: true
-{% endraw %}
 ```
 
 Subsequently we tell our pipeline that we want to run this publishing job on a macOS machine. In this case, we're using `macos-13` but you can also use `macos-latest` to get all the most up-to-date versions of the tooling. However, depending on your codebase it can be benificial to use an earlier version of the build agent to get your project build up-and-running. 
 
 ```yaml
-{% raw %}
 jobs:
   publish-ios:
     runs-on: macos-13
@@ -64,7 +62,6 @@ jobs:
 
     steps:
       ...
-{% endraw %}
 ```
 
 ## Setting up for a successful build
@@ -72,7 +69,6 @@ jobs:
 These steps collectively set up the development environment, install necessary tools, and prepare the project for subsequent actions like building, testing, or deploying. It sets the version of Xcode to use, the .NET version to use, checks out the code, installs the necessary .NET MAUI workloads and restores any additional external dependencies the project might have.
 
 ```yaml
-{% raw %}
   - uses: maxim-lobanov/setup-xcode@v1
     name: Set XCode version
     with:
@@ -93,7 +89,6 @@ These steps collectively set up the development environment, install necessary t
 
   - name: Restore Dependencies
     run: dotnet restore ${{ inputs.project-file }}
-{% endraw %}
 ```
 
 ## Setting up the iOS-specifics
@@ -101,7 +96,7 @@ These steps collectively set up the development environment, install necessary t
 The next step is setting up our environment for code signing through Apple's toolchain. We start by importing code-signing certificates into the build environment. These certificates are used for code-signing iOS or macOS applications. They are passed in through the parent pipeline. The next step essentially uses the provided parameters to authenticate with Apple's servers, query and download the necessary provisioning profiles, used for signing and deploying iOS applications. These profiles are essential for ensuring that the application can be distributed and run on Apple devices.
 
 ```yaml
-{% raw %}
+
   # These expire on a yearly basis, so check if they're still valid!
   - uses: apple-actions/import-codesign-certs@v2
     with: 
@@ -117,7 +112,6 @@ The next step is setting up our environment for code signing through Apple's too
       issuer-id: ${{ secrets.appstore-issuer }}
       api-key-id: ${{ secrets.appstore-keyid }}
       api-private-key: ${{ secrets.appstore-private-key }}
-{% endraw %}
 ```
 
 ## Version the app
@@ -125,7 +119,6 @@ The next step is setting up our environment for code signing through Apple's too
 This step helps manage the version information of a .NET MAUI application. The `csproj` parameter should be pointing to the actual path of the project file, and the `version` parameter should be set to an internal numerical value that ensures the uniqueness of the application's version. Each version of a binary that you upload to Apple's portal should have a subsequent higher version number. The `displayVersion` parameter adds additional information to the version representing an easier to understand version number, and the `printFile`` parameter is optional and can be used to log the version that is eventually used if set to true.
 
 ```yaml
-{% raw %}
   - name: Version the app
     uses: managedcode/MAUIAppVersion@v1
     with: 
@@ -133,7 +126,6 @@ This step helps manage the version information of a .NET MAUI application. The `
       version: ${{ github.run_number }} # to keep value unique
       displayVersion: ${{ inputs.build-version }}.${{ github.run_number }}
       printFile: true # optional 
-{% endraw %}
 ```
 
 ## Publishing the app
@@ -141,17 +133,14 @@ This step helps manage the version information of a .NET MAUI application. The `
 The next step essentially uses the `dotnet publish` command to build and publish the iOS app. We provide the project file, type of build configuration and the framework we want to build for (iOS). By telling the `publish` command to also `ArchiveOnBuild` we indicate that we want to have an IPA file at the end of this step. This IPA file can then be used to upload to TestFlight.
 
 ```yaml
-{% raw %}
   - name: Publish the iOS app
     run: dotnet publish ${{inputs.project-file}} -c ${{ inputs.build-config }} -f:${{ inputs.dotnet-version-target }}-ios /p:ArchiveOnBuild=true /p:EnableAssemblyILStripping=false
-{% endraw %}
 ```               
 
 ## Uploading to TestFlight
 Last but definitely not least, we need to upload the IPA file we got from the previous step into Apple's TestFlight platform. In the previous post we've set up API keys to connect to this platform that are being passed into this nested workflow. We pass in the path to where the `dotnet publish` command has published the IPA file along with the API keys and other data we got from the TestFlight platform. In the previous post in our series I detailed how to set this initial connection up.
 
 ```yaml
-{% raw %}
   - name: Upload app to TestFlight
     uses: apple-actions/upload-testflight-build@v1
     with:
@@ -159,7 +148,6 @@ Last but definitely not least, we need to upload the IPA file we got from the pr
       issuer-id: ${{ secrets.appstore-issuer }}
       api-key-id: ${{ secrets.appstore-keyid }}
       api-private-key: ${{ secrets.appstore-private-key }}
-{% endraw %}
 ```
 
 And that's it! In this article I tried to provid an in-depth look at the GitHub Actions workflow steps required for building a .NET MAUI application specifically for iOS. The final step ensures seamless integration with Apple's TestFlight platform for testing and distribution. If you have any questions, don't hesitate to reach out to me on social media.

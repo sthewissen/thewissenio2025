@@ -1,6 +1,7 @@
 ---
 title: Adopting the .NET Generic Host
 pubDate: 2022-01-30
+slug: adopting-the-generic-host
 image:
     url: "/images/headers/maui3.jpg"
 tags: ["xamarin","xamarin.forms","maui"]

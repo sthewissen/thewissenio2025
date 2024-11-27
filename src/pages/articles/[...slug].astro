@@ -1,15 +1,69 @@
 ---
-import { getCollection } from 'astro:content';
-// import MarkdownPostLayout from '../../layouts/MarkdownPostLayout.astro';
+import Layout from "../../components/layout.astro";
+import { getCollection } from "astro:content";
+import { config } from "../../../my.config";
 
 export async function getStaticPaths() {
-  const articles = await getCollection('articles');
-  return articles.map(entry => ({
-    params: { slug: entry.slug }, props: { entry },
+  const articles = await getCollection("articles");
+  return articles.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
   }));
 }
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+
+const metadata = {
+  pageTitle: `${entry.data.title}`,
+  pageDescription: entry.data.excerpt || "Read this amazing article. You know you want to.",
+  pageUrl: `${config.SITE_ROOT}/articles/${entry.slug}`,
+  pageImage: entry.data.image.url || `${config.SITE_ROOT}/default.png`,
+};
 ---
-<Content />
+
+<Layout {...metadata}>
+  <!-- <section class="text-center py-24 bg-white">
+    <div class="container mx-auto max-w-5xl px-4">
+      <h2 class="text-3xl tracking-normal font-header font-bold">
+        Got a crazy idea? Let's build it together!
+      </h2>
+      <div class="my-5 w-24 h-1 bg-brand mx-auto"></div>
+    </div>
+  </section> -->
+
+  <div class="max-w-5xl mx-auto px-4 py-12">
+    
+    <!-- Article Header -->
+    <header class="text-center max-w-3xl mx-auto mb-8">
+      <span class="text-sm font-header text-brand uppercase font-semibold">
+        {new Intl.DateTimeFormat("en-US", {
+          month: "long",
+          year: "numeric",
+        }).format(new Date(entry.data.pubDate))}
+      </span>
+      <h1 class="mt-2 text-4xl font-bold text-gray-800">
+        {entry.data.title}
+      </h1>
+      <div class="my-5 w-24 h-1 bg-brand mx-auto"></div>
+      <p class="mt-4 text-gray-600 max-w-3xl mx-auto">
+        {entry.data.excerpt}
+      </p>
+    </header>
+  
+    <!-- Article Image -->
+    <div class="mb-10 w-full shadow-lg relative mx-auto h-auto overflow-hidden">
+      <img
+        src={entry.data.image.url}
+        alt="Harvest Strategy"
+        class="w-full   relative object-cover transition-all duration-[5000ms] hover:scale-110"
+      />
+    </div>
+  
+    <!-- Article Content -->
+    <article class="markdown-content prose prose-md max-w-3xl mx-auto text-gray-700">
+      <Content />
+    </article>
+
+</Layout>
+
