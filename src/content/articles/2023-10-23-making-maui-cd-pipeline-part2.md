@@ -1,5 +1,5 @@
 ---
-title: Building a .NET MAUI CD pipeline in GitHub Actions (Part II - iOS)
+title: GitHub Actions pipeline for .NET MAUI iOS
 pubDate: 2023-10-23
 image:
     url: "/images/headers/pipeline2.jpg"

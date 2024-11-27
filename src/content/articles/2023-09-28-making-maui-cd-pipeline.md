@@ -1,5 +1,5 @@
 ---
-title: Building a .NET MAUI CD pipeline in GitHub Actions (Part I - Main)
+title: Building a .NET MAUI CD pipeline in GitHub Actions
 pubDate: 2023-09-28
 image:
     url: "/images/headers/pipeline.jpg"

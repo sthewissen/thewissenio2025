@@ -1,0 +1,44 @@
+---
+import { getCollection } from 'astro:content';
+import { config } from '../../my.config';
+
+// Fetching blog posts
+const posts = (await getCollection('articles'))
+  .sort((a, b) => new Date(b.data.pubDate).getTime()  - new Date(a.data.pubDate).getTime()) // Sort by date
+  .slice(0, config.FRONT_PAGE_ARTICLE_COUNT) // Limit to the last 5 articles
+  .map(post => ({
+    title: post.data.title,
+    link: `/articles/${post.slug}/`,
+    date: new Intl.DateTimeFormat('en-US', {
+      month: 'long',
+      year: 'numeric'
+    }).format(new Date(post.data.pubDate)),
+    isNew: (new Date().getTime() - new Date(post.data.pubDate).getTime()) / (1000 * 60 * 60 * 24) < config.NEW_WINDOW // Mark as "New" if within 30 days
+  }));
+  
+---
+
+<section class="py-12 bg-gray-100">
+  <div class="container mx-auto max-w-5xl px-4">
+    <h2 class="text-3xl mb-8 font-bold text-black">Articles</h2>
+  <div class="space-y-2">
+
+        <!-- Blog Post Item -->
+        {posts.map(post => (
+            
+          <div class="flex justify-between items-center">
+            <h3 class="text-lg hover:text-gray-500 cursor-pointer">{post.title}</h3>
+            <div class="flex items-center gap-2">
+              <span class="text-gray-500 text-sm font-mono">{post.date}</span>
+              {post.isNew && (
+                <span class="bg-gray-300 text-xs px-2 py-1 rounded-full">New!</span>
+              )}
+            </div>
+          </div>
+              ))}
+  </div>
+  <a href="/articles" class="inline-block mt-6 text-gray-600 hover:text-black">
+    Read more »
+  </a>
+</div>
+</section>

@@ -7,6 +7,7 @@ const articlesCollection = defineCollection({
     schema: z.object({
       title: z.string(),
       pubDate: z.date(),
+      excerpt: z.string().optional(),
       image: z.object({
         url: z.string()
       }),
@@ -18,6 +19,7 @@ const sideQuestsCollection = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
+    description: z.string().optional(),
     pubDate: z.date(),
     image: z.object({
       url: z.string()

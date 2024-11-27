@@ -1,75 +1,131 @@
 ---
+import { config } from "../../my.config";
 ---
-<header class="bg-white text-black">
-    <div class="container max-w-5xl mx-auto px-4 flex items-center justify-between py-4">
-      <!-- Logo -->
-      <div class="flex items-center space-x-2">
-        <span class="text-lg font-bold">steven.</span>
-      </div>
-  
-      <!-- Navigation Menu -->
-      <nav class="hidden md:flex space-x-6 text-sm font-medium">
-        <a href="/" class="hover:text-gray-300 transition">Home</a>
-        <a href="/articles" class="hover:text-gray-300 transition">Articles</a>
-        <a href="/projects" class="hover:text-gray-300 transition">Projects</a>
-        <a href="/creative" class="hover:text-gray-300 transition">Creative</a>
-        <a href="/contact" class="hover:text-gray-300 transition">Contact</a>
-      </nav>
-  
-      <!-- Social Icons -->
-      <div class="hidden md:flex space-x-4">
-        <a href="#" aria-label="GitHub" class="hover:text-gray-300 transition">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="#" aria-label="LinkedIn" class="hover:text-gray-300 transition">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="#" aria-label="Twitter" class="hover:text-gray-300 transition">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-        <a href="#" aria-label="Xbox" class="hover:text-gray-300 transition">
-          <i class="fa-brands fa-xbox"></i>
-        </a>
-      </div>
-  
-      <!-- Mobile Menu Button -->
-      <button id="menu-toggle" class="block md:hidden text-2xl">
-        <i class="fa-solid fa-bars"></i>
-      </button>
+
+<header class="bg-white font-header">
+  <div
+    class="container max-w-5xl mx-auto px-4 flex items-center justify-between py-4"
+  >
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+      <span class="text-3xl font-bold">steven<span class="text-brand">.</span></span>
     </div>
-  
-    <!-- Mobile Dropdown -->
-    <div id="mobile-menu" class="md:hidden hidden bg-gray-100 text-black">
-      <nav class="flex flex-col space-y-4 px-4 py-4">
-        <a href="/" class="hover:text-gray-300 transition">Home</a>
-        <a href="/articles" class="hover:text-gray-300 transition">Articles</a>
-        <a href="/projects" class="hover:text-gray-300 transition">Projects</a>
-        <a href="/creative" class="hover:text-gray-300 transition">Creative</a>
-        <a href="/contact" class="hover:text-gray-300 transition">Contact</a>
-      </nav>
-      <div class="flex justify-center space-x-4 py-4">
-        <a href="#" aria-label="GitHub" class="hover:text-gray-300 transition">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="#" aria-label="LinkedIn" class="hover:text-gray-300 transition">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="#" aria-label="Twitter" class="hover:text-gray-300 transition">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-        <a href="#" aria-label="Xbox" class="hover:text-gray-300 transition">
-          <i class="fa-brands fa-xbox"></i>
-        </a>
-      </div>
+
+    <!-- Navigation Menu -->
+    <nav class="hidden md:flex space-x-6 text-sm">
+      <p class="text-lg group hover:text-brand relative">
+        <a href="/" class="cursor-pointer text-lg lowercase transition">Home</a>
+        <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-brand group-hover:w-3/6"></span>
+        <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-brand group-hover:w-3/6"></span>
+      </p>
+      
+      <p class="text-lg group hover:text-brand relative">
+        <a href="/articles" class="cursor-pointer text-lg lowercase transition">Articles</a>
+        <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-brand group-hover:w-3/6"></span>
+        <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-brand group-hover:w-3/6"></span>
+      </p>
+      <p class="text-lg group hover:text-brand relative">
+        <a href="/projects" class="cursor-pointer text-lg lowercase transition">Projects</a>
+        <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-brand group-hover:w-3/6"></span>
+        <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-brand group-hover:w-3/6"></span>
+      </p>
+      <p class="text-lg group hover:text-brand relative">
+        <a href="/creative" class="cursor-pointer text-lg lowercase transition">Creative</a>
+        <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-brand group-hover:w-3/6"></span>
+        <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-brand group-hover:w-3/6"></span>
+      </p>
+      <p class="text-lg group hover:text-brand relative">
+        <a href="/contact" class="cursor-pointer text-lg lowercase transition">Contact</a>
+        <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-brand group-hover:w-3/6"></span>
+        <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-brand group-hover:w-3/6"></span>
+      </p>
+    </nav>
+
+    <!-- Social Icons -->
+    <div class="hidden md:flex space-x-4">
+      <a
+        href={config.BLUESKY_LINK}
+        aria-label="BlueSky"
+        class="hover:text-brand transition"
+      >
+        <i class="fa-brands fa-bluesky"></i>
+      </a>
+      <a
+        href={config.GITHUB_LINK}
+        aria-label="GitHub"
+        class="hover:text-brand transition"
+      >
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a
+        href={config.LINKEDIN_LINK}
+        aria-label="LinkedIn"
+        class="hover:text-brand transition"
+      >
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a
+        href={config.XBOX_LINK}
+        aria-label="Xbox"
+        class="hover:text-brand transition"
+      >
+        <i class="fa-brands fa-xbox"></i>
+      </a>
     </div>
-  </header>
-  
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-  
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
-  
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-toggle" class="block md:hidden text-2xl">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobile-menu" class="md:hidden hidden bg-brand-extra text-black">
+    <nav class="flex flex-col space-y-4 px-4 py-4">
+      <a href="/" class="hover:text-brand lowercase cursor-pointer text-lg transition">Home</a>
+      <a href="/articles" class="hover:text-brand lowercase cursor-pointer text-lg transition">Articles</a>
+      <a href="/projects" class="hover:text-brand lowercase cursor-pointer text-lg transition">Projects</a>
+      <a href="/creative" class="hover:text-brand lowercase cursor-pointer text-lg transition">Creative</a>
+      <a href="/contact" class="hover:text-brand lowercase cursor-pointer text-lg transition">Contact</a>
+    </nav>
+    <div class="flex justify-center space-x-4 py-4">
+      <a
+        href={config.BLUESKY_LINK}
+        aria-label="BlueSky"
+        class="hover:text-brand transition"
+      >
+        <i class="fa-brands fa-bluesky"></i>
+      </a>
+      <a
+        href={config.GITHUB_LINK}
+        aria-label="GitHub"
+        class="hover:text-brand transition"
+      >
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a
+        href={config.LINKEDIN_LINK}
+        aria-label="LinkedIn"
+        class="hover:text-brand transition"
+      >
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a
+        href={config.XBOX_LINK}
+        aria-label="Xbox"
+        class="hover:text-brand transition"
+      >
+        <i class="fa-brands fa-xbox"></i>
+      </a>
+    </div>
+  </div>
+</header>
+
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>

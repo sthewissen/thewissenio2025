@@ -1,5 +1,5 @@
 ---
-title: Building a .NET MAUI CD pipeline in GitHub Actions (Part III - Android)
+title: GitHub Actions pipeline for .NET MAUI Android
 pubDate: 2023-11-19
 image:
     url: "/images/headers/pipeline3.jpg"
