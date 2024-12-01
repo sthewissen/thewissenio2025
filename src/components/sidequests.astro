@@ -31,14 +31,14 @@ const sidequests = (await getCollection("sidequests"))
     <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 mb-8 space-y-4 justify-center">
       {
         sidequests.map((sidequest) => (
-          <div class="relative break-inside-avoid overflow-hidden bg-gray-200 group">
+        <div class="relative group overflow-hidden bg-gray-200">
             <img
               loading="lazy"
               src={sidequest.image}
               alt={sidequest.title}
-              class="w-full h-auto object-cover transition-all duration-300 group-hover:scale-110"
+              class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
             />
-            <div class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-white transition-opacity duration-300">
+            <div class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 flex flex-col justify-center items-center text-white p-4 transition-opacity duration-300">
               <h3 class="text-lg font-bold mb-2">{sidequest.title}</h3>
               <p class="px-4">{sidequest.description}</p>
             </div>
