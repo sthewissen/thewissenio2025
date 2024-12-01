@@ -10,6 +10,7 @@ const sidequests = (await getCollection("sidequests"))
   .slice(0, config.FRONT_PAGE_SIDEQUEST_COUNT)
   .map((post) => ({
     title: post.data.title,
+    description: post.data.description,
     image: post.data.image.url,
     date: new Intl.DateTimeFormat("en-US", {
       month: "long",

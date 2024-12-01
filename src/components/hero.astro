@@ -1,40 +1,52 @@
 ---
 
 ---
-<div class="bg-white min-h-screen flex flex-col justify-center px-6 sm:px-12">
-    <!-- Hero Section -->
-    <div class="grid grid-cols-1 md:grid-cols-3 max-w-7xl w-full items-center mx-auto">
-      <!-- Left Column: Portrait Picture Placeholder -->
-      <div class="relative bg-gray-300 h-[500px] w-full flex items-center justify-center">
-        <!-- Vertical Name -->
-        <p class="absolute -left-12 transform -rotate-90 text-gray-500 font-medium text-sm tracking-widest">
-          steven.
-        </p>
+<div class="container mx-auto max-w-5xl py-8">
+  <div class="flex items-center">
+    <!-- Left Column -->
+    <div class="flex-1 hidden md:block flex justify-center items-center">
+      <img
+        src="images/steven.png"
+        alt="Steven Thewissen"
+        class="max-w-full max-h-full object-contain"
+      />
+    </div>
+
+    <!-- Middle Column -->
+    <div class="h-full flex flex-col items-center mx-4 justify-between">
+      <!-- Top-aligned text -->
+      <div
+        onclick="playAudio('/sounds/sthewissen.mp3')"
+        class="flex-shrink-0 flex text-sm my-8 items-start text-gray-500 text-center"
+        style="writing-mode: vertical-lr; transform: scale(-1, -1);text-align: center;"
+      >
+        <i class="fa-solid fa-volume-high mx-auto my-2 rotate-90"></i>
+        <span>/ˈSTIːVƏN TEIːWISːSƐN/</span>
       </div>
-  
-      <!-- Middle Column: Vertical Separator with Phonetic Name -->
-      <div class="flex flex-col items-center relative">
-        <!-- Rotated Phonetic Name -->
-        <p class="absolute top-1/2 left-0 transform -translate-y-1/2 rotate-90 text-sm italic text-gray-400 tracking-wide">
-          / ˈstiːvən ˈθiːwɪsən /
-        </p>
-        <!-- Separator Line -->
-        <div class="h-[500px] w-1 bg-gray-300"></div>
-      </div>
-  
-      <!-- Right Column: Title, Text, and Button -->
-      <div class="space-y-6 px-6">
-        <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">
-          Steven Thewissen: Architect of Quantum Pancake Realities
-        </h1>
-        <p class="text-gray-600 text-lg leading-relaxed">
-          Steven Thewissen seamlessly integrates holographic coffee paradigms with dynamic .NET MAUI ecosystems, orchestrating seamless vortexes of MVP stardust. His expertise in binary jellybean frameworks empowers unicorn-driven migrations across multidimensional podcast landscapes.
-        </p>
-        <button
-          class="px-6 py-3 bg-gray-300 font-medium rounded-full shadow-lg hover:bg-gray-400 focus:outline-none focus:ring focus:ring-gray-300">
-          Explore Galactic Insights
-        </button>
+
+      <!-- Spacer for remaining room -->
+      <div class="flex-grow flex items-center">
+        <!-- Centered separator line -->
+        <div class="w-[4px] h-[120px] bg-brand"></div>
       </div>
     </div>
+
+    <!-- Right Column -->
+    <div class="flex-1 flex flex-col justify-center px-4">
+      <h2 class="text-2xl font-bold text-gray-800 mb-2">
+        Nothing to See Here; Just a Developer, Designer, and Creative Enthusiast
+      </h2>
+      <p class="my-4 text-gray-600">
+        I’m a full-stack .NET developer who really enjoys building
+        stuff—especially mobile apps with .NET MAUI and backend systems/APIs
+        that run on Azure or on-prem. I also dabble in web apps when the mood
+        strikes and occasionally write blogs about things I’ve learned or
+        problems I’ve solved while coding.
+      </p><p class="my-4 text-gray-600">
+        Outside of work, you’ll usually find me playing soccer, cycling, or
+        getting lost in an Xbox game. I also like spending time in Photoshop and
+        other creative outlets like prop-making, drawing, and pixel art.
+      </p>
+    </div>
   </div>
-  
+</div>
