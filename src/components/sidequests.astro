@@ -27,14 +27,15 @@ const sidequests = (await getCollection("sidequests"))
       screen. Here's a peek at some of the creative projects that keep my
       imagination and hands busy when I'm not buried in code.
     </p>
-    <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 mb-8 space-y-4">
+    <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 mb-8 space-y-4 justify-center">
       {
         sidequests.map((sidequest) => (
-          <div class="break-inside-avoid overflow-hidden bg-gray-200">
+          <div class="break-inside-avoid overflow-hidden bg-gray-200">            
             <img
+              loading="lazy"
               src={sidequest.image}
               alt={sidequest.title}
-              class="w-full h-auto object-cover"
+              class="w-full h-auto relative object-cover transition-all duration-300 hover:scale-110"
             />
           </div>
         ))

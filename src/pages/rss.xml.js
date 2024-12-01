@@ -19,7 +19,7 @@ export async function GET(context) {
         title: article.data.title,
         description: article.data.excerpt || '',
         pubDate: article.data.pubDate || new Date(),
-        link: `${config.SITE_ROOT}/articles/${article.slug}/`,
+        link: `${config.SITE_ROOT}/${article.slug}/`,
       })),
     stylesheet: '/rss/pretty-feed-v3.xsl'
     // (optional) inject custom xml

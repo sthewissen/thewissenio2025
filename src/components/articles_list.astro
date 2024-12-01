@@ -8,7 +8,7 @@ const posts = (await getCollection('articles'))
   .slice(0, config.FRONT_PAGE_ARTICLE_COUNT) // Limit to the last 5 articles
   .map(post => ({
     title: post.data.title,
-    link: `/articles/${post.slug}/`,
+    link: `/${post.slug}/`,
     date: new Intl.DateTimeFormat('en-US', {
       month: 'long',
       year: 'numeric'

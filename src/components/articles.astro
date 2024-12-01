@@ -12,7 +12,7 @@ const featuredPost = (await getCollection("articles"))
     title: post.data.title,
     image: post.data.image.url,
     excerpt: post.data.excerpt,
-    link: `/articles/${post.slug}/`,
+    link: `/${post.slug}/`,
     date: new Intl.DateTimeFormat("en-US", {
       month: "long",
       year: "numeric",
@@ -31,7 +31,7 @@ const posts = (await getCollection("articles"))
   .slice(1, config.FRONT_PAGE_ARTICLE_COUNT + 1) // Limit to the last 5 articles
   .map((post) => ({
     title: post.data.title,
-    link: `/articles/${post.slug}/`,
+    link: `/${post.slug}/`,
     image: post.data.image.url,
     date: new Intl.DateTimeFormat("en-US", {
       month: "long",

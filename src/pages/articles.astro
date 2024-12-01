@@ -2,19 +2,21 @@
 import Layout from "../components/layout.astro";
 import { getCollection } from "astro:content";
 
-const articles = (await getCollection('articles')).sort(
+const articles = (await getCollection("articles")).sort(
   (a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate)
 );
 
 function truncateHtml(html, limit = 200) {
-    const textContent = html
-    .replace(/!\[.*?\]\(.*?\)/g, '') // Remove images
-    .replace(/\[.*?\]\(.*?\)/g, '') // Remove links
-    .replace(/`.*?`/g, '')          // Remove inline code
-    .replace(/[#>*_`~\-\+]/g, '')   // Remove Markdown syntax
-    .replace(/\n/g, ' ')            // Replace newlines with spaces
+  const textContent = html
+    .replace(/!\[.*?\]\(.*?\)/g, "") // Remove images
+    .replace(/\[.*?\]\(.*?\)/g, "") // Remove links
+    .replace(/`.*?`/g, "") // Remove inline code
+    .replace(/[#>*_`~\-\+]/g, "") // Remove Markdown syntax
+    .replace(/\n/g, " ") // Replace newlines with spaces
     .trim(); // Strip HTML tags
-  return textContent.length > limit ? textContent.slice(0, limit) + '...' : textContent;
+  return textContent.length > limit
+    ? textContent.slice(0, limit) + "..."
+    : textContent;
 }
 
 const processedArticles = await Promise.all(
@@ -30,22 +32,35 @@ const processedArticles = await Promise.all(
 <Layout>
   <!-- Hero Section -->
   <section class="bg-brand-light py-16 text-center">
-    <h1 class="text-4xl font-header font-bold">Articles</h1>
-    <div class="my-5 w-24 h-1 bg-brand mx-auto"></div>
-    <p class="text-center text-custom-gray max-w-[45rem] mx-auto">
-        Welcome to my little corner of the internet, where I share code, ideas, and the occasional tech experiment.    </p>
+    <div class="max-w-5xl mx-auto">
+      <h1 class="text-4xl font-header font-bold">Articles</h1>
+      <div class="my-5 w-24 h-1 bg-brand mx-auto"></div>
+      <p class="text-center text-gray-600 max-w-[45rem] mx-auto">
+        Welcome to my little corner of the internet, where I share code, ideas,
+        and the occasional tech experiment. Find what you're looking for quickly by using the search bar below. You know how the internet works.
+      </p>
+      <input
+        id="search"
+        type="text"
+        placeholder="Search articles..."
+        class="w-full mt-8 px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-brand"
+      />
+    </div>
   </section>
 
   <!-- Article Grid -->
   <section class="py-16 px-4 bg-white">
     <div
-      class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+      id="articles-container"
+      class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8"
     >
       {
         processedArticles.map((article) => (
           <a
-            href={`/articles/${article.slug}`}
+            href={`/${article.slug}`}
             class="block bg-gray-50 shadow-lg overflow-hidden transform hover:scale-105 transition duration-1000"
+            data-title={article.data.title.toLowerCase()}
+            data-content={article.truncatedContent.toLowerCase()}
           >
             <img
               src={article.data.image.url}
@@ -65,11 +80,28 @@ const processedArticles = await Promise.all(
               </h2>
               <p class="text-sm text-gray-600 mt-2">
                 {article.truncatedContent}
-                </p>
+              </p>
             </div>
           </a>
         ))
       }
     </div>
   </section>
+
+  <script>
+    // Client-side search functionality
+    const searchInput = document.getElementById("search");
+    const articlesContainer = document.getElementById("articles-container");
+    const articles = Array.from(articlesContainer.children);
+
+    searchInput.addEventListener("input", (e) => {
+      const query = e.target.value.toLowerCase();
+      articles.forEach((article) => {
+        const title = article.getAttribute("data-title");
+        const content = article.getAttribute("data-content");
+        const matches = title.includes(query) || content.includes(query);
+        article.style.display = matches ? "block" : "none";
+      });
+    });
+  </script>
 </Layout>
