@@ -32,7 +32,7 @@ But what if we require the input of negative numbers? We might have a small issu
 ### Fixing the keyboard problem
 This might be a tricky question to answer. To override behavior in Xamarin.Forms for specific platforms we typically go down [to the renderer level](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/custom-renderer/). The best option is probably to override the `Numeric` type in a custom renderer to use a different native iOS keyboard.
 
-![](images/posts/1_v3li23Q8UkrTFFsLXU62Wg.png)
+![](/images/posts/1_v3li23Q8UkrTFFsLXU62Wg.png)
 *The different iOS keyboards, as outlined in [this blog post](https://medium.com/better-programming/12-shades-of-keyboard-types-in-ios-a413cf93bf4f)*
 
 The graphic above shows all the types available to us. But wait, there are only a few numeric types and none of them contain the right symbols to put in a negative number. Our best bet seems to be the `NumbersAndPunctuation` version, that opens up a full keyboard with the numeric tab selected. It's not optimal, because it still allows for alphanumeric input, but it's the best we have available to us. Let's look at what the renderer looks like:
