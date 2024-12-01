@@ -42,7 +42,7 @@ const sidequests = (await getCollection("sidequests"))
               alt={sidequest.title}
               class="w-full h-auto object-cover transition-transform duration-300"
             />
-            <div class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 group-focus:opacity-100 group-active:opacity-100 flex flex-col justify-center items-center text-white p-4 transition-opacity duration-300">
+            <div class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 group-active-within:opacity-100 flex flex-col justify-center items-center text-white p-4 transition-opacity duration-300">
               <h3 class="text-lg font-bold mb-2">{sidequest.title}</h3>
               <p class="px-4">{sidequest.description}</p>
             </div>
