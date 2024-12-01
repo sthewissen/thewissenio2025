@@ -5,9 +5,10 @@ slug: making-maui-cd-pipeline-part3
 image:
     url: "/images/headers/pipeline3.jpg"
 tags: ["maui", "continuous-delivery", "github-actions"]
+excerpt: This is the third and last post covering how to build a GitHub Actions pipeline and have it build your .NET MAUI application for both Android and iOS.
 ---
 
-This is the third and last post covering how to build a GitHub Actions pipeline and have it build your .NET MAUI application for both Android and iOS. In this last installment we're going to take a look at the Android specific pipeline getting your app all the way to the Google Play Store. In [the first article](https://www.thewissen.io/making-maui-cd-pipeline/) of this series I set up a parent workflow that passes parameters and secrets down into the Android specific pipeline we'll be creating here. Be sure to give that one a read before continuing to read this one!
+In this last installment we're going to take a look at the Android specific pipeline getting your app all the way to the Google Play Store. In [the first article](https://www.thewissen.io/making-maui-cd-pipeline/) of this series I set up a parent workflow that passes parameters and secrets down into the Android specific pipeline we'll be creating here. Be sure to give that one a read before continuing to read this one!
 
 ## The initial workflow initialization
 Our first step is to take all the incoming variables and define them in our nested workflow. That way we can use them in the next steps. The same goes for the secrets. We define both of these at the start of our workflow in the `workflow_call` node by defining them with both a type and name.

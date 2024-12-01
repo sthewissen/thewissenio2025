@@ -5,9 +5,8 @@ slug: more-maui-bits
 image:
     url: "/images/headers/maui4.jpg"
 tags: ["xamarin","xamarin.forms","maui"]
+excerpt: This post covers a few different topics, namely single project, the Xamarin Community Toolkit and migrating from Xamarin.Forms to MAUI.
 ---
-
-This post covers a few different topics, namely single project, the Xamarin Community Toolkit and migrating from Xamarin.Forms to MAUI.
 
 ## Moving resources to a single project
 

@@ -5,9 +5,10 @@ slug: adopting-the-generic-host
 image:
     url: "/images/headers/maui3.jpg"
 tags: ["xamarin","xamarin.forms","maui"]
+excerpt: Coming from the ASP.NET Core space, you may already be aware of the .NET Generic Host model. It provides a clean way to configure and start up your apps. It does so by standardizing things like configuration, dependency injection, logging and more. 
 ---
 
-Coming from the ASP.NET Core space, you may already be aware of the .NET Generic Host model. It provides a clean way to configure and start up your apps. It does so by standardizing things like configuration, dependency injection, logging and more. We commonly refer to the object encapsulating all of this as the host, and it’s typically configured through the `Main` method in a `Program` class. Alternatively, a `Startup` class can also provide an entry point to configuring the host. This is what the out-of-the-box generic host in ASP.NET Core looks like:
+We commonly refer to the object encapsulating all of this as the host, and it’s typically configured through the `Main` method in a `Program` class. Alternatively, a `Startup` class can also provide an entry point to configuring the host. This is what the out-of-the-box generic host in ASP.NET Core looks like:
 
 <script src="https://gist.github.com/sthewissen/109473a44ad1451a8ef0eb5ae86eff2d.js"></script>
 

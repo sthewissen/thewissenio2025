@@ -1,0 +1,77 @@
+---
+import Layout from "../components/layout.astro";
+import { getCollection } from "astro:content";
+
+const articles = (await getCollection('articles')).sort(
+  (a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate)
+);
+
+function truncateHtml(html, limit = 200) {
+    const textContent = html
+    .replace(/!\[.*?\]\(.*?\)/g, '') // Remove images
+    .replace(/\[.*?\]\(.*?\)/g, '') // Remove links
+    .replace(/`.*?`/g, '')          // Remove inline code
+    .replace(/[#>*_`~\-\+]/g, '')   // Remove Markdown syntax
+    .replace(/\n/g, ' ')            // Replace newlines with spaces
+    .trim(); // Strip HTML tags
+  return textContent.length > limit ? textContent.slice(0, limit) + '...' : textContent;
+}
+
+const processedArticles = await Promise.all(
+  articles.map(async (article) => {
+    return {
+      ...article,
+      truncatedContent: truncateHtml(article.body),
+    };
+  })
+);
+---
+
+<Layout>
+  <!-- Hero Section -->
+  <section class="bg-brand-light py-16 text-center">
+    <h1 class="text-4xl font-header font-bold">Articles</h1>
+    <div class="my-5 w-24 h-1 bg-brand mx-auto"></div>
+    <p class="text-center text-custom-gray max-w-[45rem] mx-auto">
+      Dive into topics ranging from .NET to mobile development. Explore, learn,
+      and innovate!
+    </p>
+  </section>
+
+  <!-- Article Grid -->
+  <section class="py-16 px-4 bg-white">
+    <div
+      class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+    >
+      {
+        processedArticles.map((article) => (
+          <a
+            href={`/articles/${article.slug}`}
+            class="block bg-gray-50 shadow-lg overflow-hidden transform hover:scale-105 transition duration-1000"
+          >
+            <img
+              src={article.data.image.url}
+              alt={article.data.title}
+              loading="lazy"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <p class="text-sm font-header text-brand uppercase font-semibold">
+                {new Intl.DateTimeFormat("en-US", {
+                  month: "long",
+                  year: "numeric",
+                }).format(new Date(article.data.pubDate))}
+              </p>
+              <h2 class="text-xl font-bold text-header">
+                {article.data.title}
+              </h2>
+              <p class="text-sm text-gray-600 mt-2">
+                {article.truncatedContent}
+                </p>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</Layout>

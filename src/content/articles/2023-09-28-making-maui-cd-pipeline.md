@@ -5,9 +5,10 @@ slug: making-maui-cd-pipeline
 image:
     url: "/images/headers/pipeline.jpg"
 tags: ["maui", "continuous-delivery", "github-actions"]
+excerpt: In this first post I look to cover building a GitHub Actions pipeline that can build your .NET MAUI application for both Android and iOS and get it all the way to the Google Play Store and Apple AppStore for testing. 
 ---
 
-In this first post I look to cover building a GitHub Actions pipeline that can build your .NET MAUI application for both Android and iOS and get it all the way to the Google Play Store and Apple AppStore for testing. To do so, we'll be using nested workflows for both of these different platforms, which are called from a root workflow. This post will cover the overarching workflow while next installments will cover the iOS and Android side of things. Let's break it down!
+To do so, we'll be using nested workflows for both of these different platforms, which are called from a root workflow. This post will cover the overarching workflow while next installments will cover the iOS and Android side of things. Let's break it down!
 
 ## The parent workflow
 

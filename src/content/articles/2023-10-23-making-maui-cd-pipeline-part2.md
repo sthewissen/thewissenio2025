@@ -5,9 +5,10 @@ slug: making-maui-cd-pipeline-part2
 image:
     url: "/images/headers/pipeline2.jpg"
 tags: ["maui", "continuous-delivery", "github-actions"]
+excerpt: Welcome to the second post covering building a GitHub Actions pipeline that can build your .NET MAUI application for both Android and iOS.
 ---
 
-Welcome to the second post covering building a GitHub Actions pipeline that can build your .NET MAUI application for both Android and iOS. This time around we're going to take a look at the iOS specific pipeline, which gets your app binary all the way to the Apple AppStore for testing. In [my previous article](https://www.thewissen.io/making-maui-cd-pipeline/) I set up a parent workflow that passes a bunch of parameters and secrets down into the iOS specific pipeline. If you haven't read that article yet, read it before proceeding to read this one. Done reading it? Then let's start!
+This time around we're going to take a look at the iOS specific pipeline, which gets your app binary all the way to the Apple AppStore for testing. In [my previous article](https://www.thewissen.io/making-maui-cd-pipeline/) I set up a parent workflow that passes a bunch of parameters and secrets down into the iOS specific pipeline. If you haven't read that article yet, read it before proceeding to read this one. Done reading it? Then let's start!
 
 ## The initial workflow initialization
 Our first step is to take all the incoming variables and define them in our nested workflow. That way we can use them in the next steps. The same goes for the secrets. We define both of these at the start of our workflow in the `workflow_call` node by defining them with both a type and name.

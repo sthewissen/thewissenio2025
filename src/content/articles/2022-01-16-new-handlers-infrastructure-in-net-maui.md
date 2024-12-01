@@ -5,8 +5,9 @@ slug: new-handlers-infrastructure-in-net-maui
 image:
     url: "/images/headers/maui2.jpg"
 tags: ["xamarin","xamarin.forms","maui"]
+excerpt: If you’ve ever done any Xamarin.Forms development you might be aware of the concept of a renderer. This is a piece of code that takes care of rendering a specific control to the screen in a consistent way across each platform.
 ---
-If you’ve ever done any Xamarin.Forms development you might be aware of the concept of a renderer. This is a piece of code that takes care of rendering a specific control to the screen in a consistent way across each platform. As a developer, you can create a custom renderer that allows you to target a specific type of control on a specific platform and override its built-in behavior. For example, if you want to remove the underline beneath an Android input field, you could write a single custom renderer that would apply to all your `Entry` fields and do just that. 
+As a developer, you can create a custom renderer that allows you to target a specific type of control on a specific platform and override its built-in behavior. For example, if you want to remove the underline beneath an Android input field, you could write a single custom renderer that would apply to all your `Entry` fields and do just that. 
 
 In .NET MAUI the concept of renderers becomes obsolete, but bringing your current renderers to .NET MAUI can be done through the compatibility APIs. Moving forward however, handlers will replace renderers entirely. But why? There are a few underlying architectural issues within the current Xamarin.Forms implementation that have spurred the development of an alternative approach.
 

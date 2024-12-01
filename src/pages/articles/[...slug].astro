@@ -5,13 +5,25 @@ import { config } from "../../../my.config";
 
 export async function getStaticPaths() {
   const articles = await getCollection("articles");
-  return articles.map((entry) => ({
+  // return articles.map((entry) => ({
+  //   params: { slug: entry.slug },
+  //   props: { entry },
+  // }));
+
+  // Sort articles by publication date or any preferred order
+  articles.sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
+
+  return articles.map((entry, index) => ({
     params: { slug: entry.slug },
-    props: { entry },
+    props: {
+      entry,
+      next: index > 0 ? articles[index - 1] : null,
+      previous: index < articles.length - 1 ? articles[index + 1] : null,
+    },
   }));
 }
 
-const { entry } = Astro.props;
+const { entry, next, previous } = Astro.props;
 const { Content } = await entry.render();
 
 const metadata = {
@@ -65,5 +77,19 @@ const metadata = {
       <Content />
     </article>
 
+    <!-- Navigation -->
+    <nav class="flex max-w-3xl mx-auto justify-between mt-12">
+      {previous && (
+        <a href={`/articles/${previous.slug}`} class="inline-block mt-8 text-sm font-medium text-brand-dark hover:underline">
+          ← Previous article
+        </a>
+      )}
+      {next && (
+        <a href={`/articles/${next.slug}`} class="inline-block mt-8 text-sm font-medium text-brand-dark hover:underline">
+          Next article →
+        </a>
+      )}
+    </nav>
+  </div>
 </Layout>
 
