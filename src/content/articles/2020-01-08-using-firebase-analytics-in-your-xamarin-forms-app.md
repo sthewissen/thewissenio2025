@@ -18,10 +18,10 @@ I've done posts about [analytics](https://www.thewissen.io/crash-reporting-analy
 *   [Debugging your Firebase analytics](#debug)
 *   [Additional things you need to know](#needtoknow)
 
-### <a name="intro"/>Introducing Firebase
+### <span id="intro"/>Introducing Firebase
 If you've ever developed an app for Android you probably have seen this name pop up once or twice. Firebase is Google's mobile platform that helps developers with all sorts of support features which range from sending push notifications to analytics or performance monitoring. When it comes to analytics tracking it also Google's suggested approach for mobile apps since using the Google Analytics UA code for mobile apps is slowly being phased out.
 
-### <a name="prereq"/>Filling the Firebase prerequisites
+### <span id="prereq"/>Filling the Firebase prerequisites
 For our mobile app to gather statistics we will first need to register it with Google. We do this by going to the [Firebase console](https://console.firebase.google.com/) and logging in with our Google account. The app we'll be tracking is known as a _project_, so to make one we hit the **Create project** button.
 
 ![Setting up Firebase.](/images/posts/image-25.png?resize=700%2C458&ssl=1)
@@ -37,7 +37,7 @@ This page already tells you what to do next, we need to create an iOS and/or And
 ![Setting up Firebase.](/images/posts/image-30.png?resize=700%2C458&ssl=1)
 *Downloading google-services.json is crucial here!*
 
-### <a name="shared"/>Creating the shared code
+### <span id="shared"/>Creating the shared code
 With our prerequisites out of the way, we will continue by creating an interface in our shared project that will represent the actions we want to be able to perform. It can be rather simple since initially, we will only want to log events. I added a method to identify the user as well, which makes us able to easily track the user journey through our app.
 
 <script src="https://gist.github.com/sthewissen/cd46dd005d867aab5ad131353f847566.js"></script>
@@ -46,7 +46,7 @@ With the interface in place, we can also start implementing this in our pages an
 
 <script src="https://gist.github.com/sthewissen/7c0cf2c932afc45c3d94faf8a74ecb98.js"></script>
 
-### <a name="android"/>Setting up the Android app
+### <span id="android"/>Setting up the Android app
 To get up and running on Android we first need to install a few NuGet packages. We will use Plugin.CurrentActivity to easily get the current app's context, so make sure you follow the setup for it as described [on its GitHub](https://github.com/jamesmontemagno/CurrentActivityPlugin).
 
 *   [Xamarin.FireBase.Analytics](https://www.nuget.org/packages/Xamarin.FireBase.Analytics)
@@ -64,7 +64,7 @@ Now that we've done all the plumbing on the Android side we can start writing so
 
 As you can tell, I've wrapped most methods in a `DEBUG` compiler directive to ensure that they don't run when I'm debugging. We don't want our developing efforts to interfere with the actual analytics we're gathering in production. Other than that it mainly consists of wrapping methods from the NuGet packages we referenced and passing in the parameters we receive. We can also provide additional parameters to the `LogEvent` call to provide metadata to it.
 
-### <a name="ios"/>Setting up the iOS app
+### <span id="ios"/>Setting up the iOS app
 Next up is our iOS app, for which we will also start by installing the necessary NuGet package. Yes, it's just the one :)
 
 *   [Xamarin.FireBase.iOS.Analytics](https://www.nuget.org/packages/Xamarin.FireBase.iOS.Analytics)
@@ -90,7 +90,7 @@ And that's it! Now it's time to put calls to the LogEvent method wherever you wa
 > I have one piece of advice to add, when debugging in iOS, under Project Options > Run > Configurations > Default, set arguments to "-smth" and extra mlaunch arguments to "--argument=-FIRAnalyticsDebugEnabled" 
 <cite>Dylan Berry (@dylbot9000) [February 16, 2020](https://twitter.com/dylbot9000/status/1229132519024492550?ref_src=twsrc%5Etfw)</cite>
 
-### <a name="debug"/>Debugging your Firebase analytics
+### <span id="debug"/>Debugging your Firebase analytics
 When sending custom events, which is what you will probably start doing, you need to take into account that it might take a while for them to show. Google informs you of this on the _Dashboard_ page by stating that you will see the first reports within 24 hours.
 
 ![](https://media.giphy.com/media/10PcMWwtZSYk2k/giphy.gif)
@@ -120,7 +120,7 @@ When you've set it up it should look something like this:
 ![Enabling Firebase DebugView on iOS.](/images/posts/image-35.png?resize=700%2C521&ssl=1)
 *Adding DebugView to your iOS project.*
 
-### <a name="needtoknow"/>Additional things you need to know about
+### <span id="needtoknow"/>Additional things you need to know about
 In closing, there are a few additional things we need to talk about or common problems you may encounter. I will quickly go over a few of them that I encountered, so you don't have to go through the same issues as I have.
 
 #### Other tools might've disabled analytics tracking

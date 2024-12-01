@@ -20,13 +20,13 @@ This is a rather long post, so here's an index for you to quickly jump to where 
 7.  [Speeding up the process](#link7)
 8.  [Conclusion](#link8)
 
-### <a name="link1"/>Marrying Xamarin Forms UI and Runkeeper
+### <span id="link1"/>Marrying Xamarin Forms UI and Runkeeper
 
 I wrote about [creating a fancy UI in Xamarin Forms](https://www.thewissen.io/kickass-ui-xamarin-forms-twitter/) before and already concluded that with a bit of effort you can pull off similar UI's to when you're creating a Xamarin.iOS or Xamarin.Android app. As always the code for this is on [my Github page](https://github.com/sthewissen/KickassUI.Runkeeper) so let's get straight into it.
 
 **Note:** Runkeeper uses Museo Sans for their text but only the medium weight version of that font is free. Therefore in some places the font for this post will look bolder or less bold than the original.
 
-### <a name="link2"/>The Start screen on iOS
+### <span id="link2"/>The Start screen on iOS
 
 There's actually not a whole lot going on *at first sight*. Some buttons at the bottom, a map and a basic navigation bar/tab bar combination. To recreate it in Xamarin Forms shouldn't be too hard to pull off either. Using the `Xamarin.Forms.Maps` NuGet package we can create a cross-platform map and using the same font and iconography as Runkeeper does there is hardly any noticeable difference!
 
@@ -56,7 +56,7 @@ The Runkeeper logo is only present on the *Start* tab and the *Start* tab also h
 
 <script src="https://gist.github.com/sthewissen/40c59e81e4c2622aabbe5785ff76deb2.js"></script> 
 
-### <a name="link3"/>The Me screen on iOS
+### <span id="link3"/>The Me screen on iOS
 
 The Runkeeper app obviously has some more screens besides the *Start* screen. That's why I also took a shot at the *Me* screen which also has some interesting parts to it. My tinkering eventually resulted in the following:
 
@@ -69,7 +69,7 @@ So what moving parts do we see here?
 * A carousel view containing the stats which was implemented using the custom-built [CarouselView control ](https://github.com/alexrainman/CarouselView)for Xamarin Forms by Alexander Reyes.
 * All the other stuff was created using simple layout controls like the `Grid` and the `StackLayout` in all sorts of configurations.
 
-### <a name="link4"/>The Start screen on Android
+### <span id="link4"/>The Start screen on Android
 
 I've said it before and I'll say it again here; I'm an iOS guy.  Android confuses me with its plethora of XML files to style your app. I always start with iOS to get it exactly the way that I want it and then move on to Android. I was in for a shock when I first opened the Runkeeper app and saw that it was quite different from the iOS version. Here's what I ended up with:
 
@@ -85,7 +85,7 @@ I also added a platform-specific `Margin` to the views containing the buttons so
 
 <script src="https://gist.github.com/sthewissen/7ef66cee05df67cc47fb8e6333bba4ef.js"></script>
 
-### <a name="link5"/>The Me screen on Android
+### <span id="link5"/>The Me screen on Android
 
 This screen looks a bit more familiar to what we saw in the iOS version. However in my opinion the actual screen in Runkeeper's Android app looks <span style="text-decoration: underline;">**worse**</span> (in my honest opinion) than what Xamarin Forms gives you straight "out of the box". What do I mean by that? Like I mentioned before I started with the iOS look and feel. Since Xamarin Forms UI is shared across platforms I already had a UI in place for Android when I was done with iOS. This UI looks better on Android (with minor tweaks) than the actual Runkeeper app does. See for yourself:
 
@@ -102,19 +102,19 @@ And perhaps it's also interesting to note what I didn't do:
 
 * Change the font for the navigation toolbar. I have yet to find out how to pull that off in Android and it seems like the hoops you have to jump through to pull it off are complete madness. Know the answer? Submit a PR!
 
-### <a name="link6"/>How much time does it take?
+### <span id="link6"/>How much time does it take?
 
 An argument for native development could be that it takes you more time to create something like this in a Xamarin Forms UI but this only took me about a morning to pull off. It's all a matter of experience and once you figure out how to do something you can re-use that piece of code in future apps. A custom renderer created to perform a specific task is easily re-usable across any future app you create.
 
 I still firmly believe that the most amount of time is spent in actually designing (placement of elements, colors, which fonts to use, iconography) the app. Whether you're creating the UI in Xamarin Forms or natively this is time you're going to have to spend anyway. Actually implementing the UI is not considerably faster or slower either way in my opinion. 
 
-### <a name="link7"/>Speeding up the process
+### <span id="link7"/>Speeding up the process
 
 There are things you can do to speed up your Xamarin Forms UI tinkering process. When you're constantly adjusting margins and paddings to nudge elements into place compiling and deploying takes a lot of time. There are tools out there like [GorillaPlayer](http://gorillaplayer.com), [Xamarin Live Player](https://www.xamarin.com/live) or [LiveXAML](http://www.livexaml.com/) that greatly simplify this workflow.
 
 For this post I tried LiveXAML and it does exactly what it says on the box. All you need to do is install [the extension](https://marketplace.visualstudio.com/items?itemName=ionoy.XamarinFormsLive-18843) in Visual Studio and install [the NuGet package](https://www.nuget.org/packages/LiveXAML) in your project. Whenever you save any XAML file, it automatically updates the running application. This is ideal to quickly tinker with things like paddings/margins and colors. However when you change things in C# code such as adding a custom renderer you will need to rebuild the app and redeploy to see your changes. 
 
-### <a name="link8"/>Conclusion
+### <span id="link8"/>Conclusion
 
 This was a really fun app to recreate and how spot on the result is kind of amazes me. The app uses a lot of default elements to create a really simple yet effective layout and that's where Xamarin Forms definitely shines. Another thing where Xamarin.Forms shines is its community of very useful tools and controls. Something like the `CarouselView` in this post is really simple to use and the fact that someone already went through the effort to create it for others to use is awesome.
 
