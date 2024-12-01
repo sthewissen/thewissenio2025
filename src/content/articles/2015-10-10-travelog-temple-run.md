@@ -2,6 +2,7 @@
 title: 'Travelog: Temple run!'
 pubDate: 2015-10-10
 tags: ["travel", "dutch"]
+slug: travelog-temple-run
 image:
     url: "/images/headers/bangkok1.jpg"
 ---

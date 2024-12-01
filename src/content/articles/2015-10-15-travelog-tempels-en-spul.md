@@ -2,6 +2,7 @@
 title: 'Travelog: Tempels en spul...'
 pubDate: 2015-10-15
 tags: ["travel", "dutch"]
+slug: travelog-tempels-en-spul
 image:
     url: "/images/headers/thaicomplex.jpg"
 ---

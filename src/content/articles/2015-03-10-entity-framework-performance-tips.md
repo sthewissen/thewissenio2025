@@ -2,6 +2,7 @@
 title: Entity Framework performance tips
 pubDate: 2015-03-10
 tags: [".net"]
+slug: entity-framework-performance-tips
 image:
     url: "/images/headers/bolt.jpg"
 ---

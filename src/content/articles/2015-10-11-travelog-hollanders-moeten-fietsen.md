@@ -2,6 +2,7 @@
 title: 'Travelog: Hollanders moeten fietsen...'
 pubDate: 2015-10-11
 tags: ["travel", "dutch"]
+slug: travelog-hollanders-moeten-fietsen
 image:
     url: "/images/headers/bangkok4.jpg"
 ---

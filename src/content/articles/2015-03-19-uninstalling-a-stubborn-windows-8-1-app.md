@@ -2,6 +2,7 @@
 title: Uninstalling a stubborn Windows 8.1 app
 pubDate: 2015-03-19
 tags: [".net"]
+slug: uninstalling-a-stubborn-windows-8-1-app
 image:
     url: "/images/headers/subway.jpg"
 ---

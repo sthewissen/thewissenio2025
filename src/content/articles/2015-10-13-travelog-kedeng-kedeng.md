@@ -2,6 +2,7 @@
 title: 'Travelog: Kedeng kedeng...'
 pubDate: 2015-10-13
 tags: ["travel", "dutch"]
+slug: travelog-kedeng-kedeng
 image:
     url: "/images/headers/bangkok3.jpg"
 ---

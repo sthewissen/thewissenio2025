@@ -2,6 +2,7 @@
 title: Improving your Visual Studio comments
 pubDate: 2015-03-17
 tags: ["visual studio"]
+slug: improving-your-visual-studio-comments
 image:
     url: "/images/headers/lego.jpg"
 ---

@@ -2,6 +2,7 @@
 title: 'Travelog: Oh my Buddha...'
 pubDate: 2015-10-19
 tags: ["travel", "dutch"]
+slug: travelog-oh-my-buddha
 image:
     url: "/images/headers/phuket2.jpg"
 ---

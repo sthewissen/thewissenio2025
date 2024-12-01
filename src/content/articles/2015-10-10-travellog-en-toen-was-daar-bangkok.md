@@ -2,6 +2,7 @@
 title: 'Travelog: En toen was daar Bangkok...'
 pubDate: 2015-10-10
 tags: ["travel", "dutch"]
+slug: travellog-en-toen-was-daar-bangkok
 image:
     url: "/images/headers/eva-air1.jpg"
 ---

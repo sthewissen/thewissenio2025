@@ -2,6 +2,7 @@
 title: Travelog - Bijna...
 pubDate: 2015-10-05
 tags: ["travel", "dutch"]
+slug: travelog-bijna
 image:
     url: "/images/headers/thailand-03-copy.jpg"
 ---

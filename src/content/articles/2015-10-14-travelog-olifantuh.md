@@ -2,6 +2,7 @@
 title: 'Travelog: Olifantuh!'
 pubDate: 2015-10-14
 tags: ["travel", "dutch"]
+slug: travelog-olifantuh
 image:
     url: "/images/headers/chiang-mai1.jpg"
 ---

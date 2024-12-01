@@ -2,6 +2,7 @@
 title: 'NuG(g)et: MiniProfiler'
 pubDate: 2015-03-24
 tags: ["nuget", ".net"]
+slug: nugget-miniprofiler
 image:
     url: "/images/headers/snail.jpg"
 ---

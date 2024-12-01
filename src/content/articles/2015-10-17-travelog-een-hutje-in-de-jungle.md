@@ -2,6 +2,7 @@
 title: 'Travelog: Een hutje in de jungle...'
 pubDate: 2015-10-17
 tags: ["travel", "dutch"]
+slug: travelog-een-hutje-in-de-jungle
 image:
     url: "/images/headers/jungle.jpg"
 ---
