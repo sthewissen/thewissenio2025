@@ -21,22 +21,26 @@ const sidequests = (await getCollection("sidequests"))
 
 <section id="creative" class="text-center py-24 bg-brand-extra">
   <div class="container mx-auto max-w-5xl px-4">
-    <h2 class="text-3xl font-header font-bold">Side Quests When I'm Not Coding...</h2>
+    <h2 class="text-3xl font-header font-bold">
+      Side Quests When I'm Not Coding...
+    </h2>
     <div class="my-5 w-24 h-1 bg-brand mx-auto"></div>
     <p class="text-center text-custom-gray mb-8 max-w-[45rem] mx-auto">
       From digital art to physical props, I love experimenting outside the
       screen. Here's a peek at some of the creative projects that keep my
       imagination and hands busy when I'm not buried in code.
     </p>
-    <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 mb-8 space-y-4 justify-center">
+    <div
+      class="columns-1 sm:columns-2 lg:columns-3 gap-4 mb-8 space-y-4 justify-center"
+    >
       {
         sidequests.map((sidequest) => (
-        <div class="relative group overflow-hidden bg-gray-200">
+          <div class="relative overflow-hidden bg-gray-200 group focus-within:bg-opacity-70">
             <img
               loading="lazy"
               src={sidequest.image}
               alt={sidequest.title}
-              class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
+              class="w-full h-auto object-cover transition-transform duration-300"
             />
             <div class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 flex flex-col justify-center items-center text-white p-4 transition-opacity duration-300">
               <h3 class="text-lg font-bold mb-2">{sidequest.title}</h3>
