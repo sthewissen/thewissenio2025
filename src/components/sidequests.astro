@@ -54,12 +54,17 @@ const sidequests = (await getCollection("sidequests"))
 </section>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    // Select all sidequest containers
     const sidequests = document.querySelectorAll('.sidequest');
 
     sidequests.forEach(item => {
       item.addEventListener('click', () => {
-        // Toggle the active class on click to show/hide the overlay
+        // Remove 'active' class from all sidequests except the clicked one
+        sidequests.forEach(el => {
+          if (el !== item) {
+            el.classList.remove('active');
+          }
+        });
+        // Toggle the 'active' class on the clicked sidequest
         item.classList.toggle('active');
       });
     });

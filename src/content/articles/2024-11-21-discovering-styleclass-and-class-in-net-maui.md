@@ -1,6 +1,7 @@
 ---
 title: Discovering StyleClass in .NET MAUI
 pubDate: 2024-12-01
+slug: discovering-styleclass-and-class-in-net-maui
 image: 
    url: '/images/headers/styleclass.jpg'
 tags: ["maui"]
