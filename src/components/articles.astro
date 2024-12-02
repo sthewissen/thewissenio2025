@@ -68,6 +68,13 @@ const posts = (await getCollection("articles"))
             >
           </h2>
           <p class="text-gray-600 mt-6">{featuredPost[0].excerpt}</p>
+
+          <a
+          href={featuredPost[0].link}
+          class="inline-block mt-4 text-sm font-medium text-brand-dark hover:underline"
+        >
+          Read more →
+        </a>
         </div>
       </div>
 
