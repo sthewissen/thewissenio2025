@@ -32,5 +32,6 @@ Implementing it is surprisingly straightforward, even if your past attempts at U
   </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 ```
+## And there's more!
 
 The `BottomSheet` isn't the only control that was added. Other notable ones are a very versatile **Button** control, a **Calendar**, and various additions to an otherwise dull and boring text entry. And because it’s all open source, you can peek under the hood and even contribute if you’re feeling adventurous.
