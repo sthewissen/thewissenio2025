@@ -13,8 +13,7 @@ A while ago, Syncfusion generously dropped [a first set of open-source .NET MAUI
 
 This new batch brings some fresh gems, but my personal favorite? The **BottomSheet** control. Now, if you’re not familiar with what a BottomSheet really is; it’s that magical UI element that slides up from the bottom of the screen. Typically it offers additional options, details, or occasionally a mini existential crisis over which kind of Uber you want to order.
 
-![The Uber app makes heavy use of bottom sheets.](/images/posts/uber-app.jpg)
-*The Uber app makes heavy use of bottom sheets.*
+![The Uber app makes heavy use of bottom sheets.](/images/posts/uber-app.jpg)*The Uber app makes heavy use of bottom sheets.*
 
 Implementing it is surprisingly straightforward, even if your past attempts at UI finesse often end in chaos. Compared to some of the other solutions I've tried that are out there in the community, this one feels a bit easier to handle. You just add it to your layout, tweak a few properties, and it works like a charm. 
 

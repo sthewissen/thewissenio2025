@@ -31,6 +31,12 @@ export default {
 								color: '#606060', // Bullet color
 							},
 						},
+						'img + em': {
+							textAlign: 'center',
+							display: 'block',
+							fontSize: '0.9rem',
+							marginTop: '-1.5rem',
+						},
 						a: {
 							background: 'linear-gradient(to bottom, transparent 62%, #e5f5f2 0) center 100% no-repeat',
 							color: '#111827',
