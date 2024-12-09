@@ -1,5 +1,5 @@
 ---
-import Layout from "../components/layout.astro";
+import Layout from "../layouts/layout.astro";
 import { getCollection } from "astro:content";
 import { config } from "../../my.config";
 
@@ -58,8 +58,8 @@ const metadata = {
     <div class="mb-10 w-full shadow-lg relative mx-auto h-auto overflow-hidden">
       <img
         src={entry.data.image.url}
-        alt="Harvest Strategy"
-        class="w-full   relative object-cover transition-all duration-[5000ms] hover:scale-110"
+        alt={entry.data.image.description}
+        class="w-full relative object-cover transition-all duration-[5000ms] hover:scale-110"
       />
     </div>
   
