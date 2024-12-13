@@ -12,9 +12,9 @@ import path from 'path';
 const svgPath = path.join('./src/icons', `${name}.svg`);
 const svgContent = fs.existsSync(svgPath) ? fs.readFileSync(svgPath, 'utf-8') : '';
 ---
-<svg
-  innerHTML={svgContent}
+<div
   class={`${className}`}
   aria-label={`${name} icon`}
   role="img"
-/>
+  set:html={svgContent}>
+</div>

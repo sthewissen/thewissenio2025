@@ -1,16 +1,17 @@
 ---
 import { config } from "../../my.config";
+import Icon from "./icon.astro";
 ---
 
 <footer class="bg-black text-white py-6 text-center">
-  <div class="flex justify-center gap-6 mb-4">
+  <div class="flex items-center justify-center gap-6 mb-4">
     <a
       href={config.BLUESKY_LINK}
       target="_blank"
       aria-label="BlueSky"
       class="text-gray-400 hover:text-white"
     >
-      <i class="fa-brands fa-bluesky text-2xl"></i>
+      <Icon name="bluesky" className="fill-gray-400 w-6 h-6 hover:fill-white text-2xl" />
     </a>
     <a
       href={config.GITHUB_LINK}
@@ -18,7 +19,7 @@ import { config } from "../../my.config";
       aria-label="GitHub"
       class="text-gray-400 hover:text-white"
     >
-      <i class="fa-brands fa-github text-2xl"></i>
+    <Icon name="github" className="fill-gray-400 w-6 h-6 hover:fill-white text-2xl" />
     </a>
     <a
       href={config.LINKEDIN_LINK}
@@ -26,7 +27,7 @@ import { config } from "../../my.config";
       aria-label="LinkedIn"
       class="text-gray-400 hover:text-white"
     >
-      <i class="fa-brands fa-linkedin text-2xl"></i>
+    <Icon name="linkedin" className="fill-gray-400 w-6 h-6 hover:fill-white text-2xl" />
     </a>
     <a
       href={config.XBOX_LINK}
@@ -34,7 +35,7 @@ import { config } from "../../my.config";
       aria-label="Xbox"
       class="text-gray-400 hover:text-white"
     >
-      <i class="fa-brands fa-xbox text-2xl"></i>
+    <Icon name="xbox" className="fill-gray-400 w-6 h-6 hover:fill-white text-2xl" />
     </a>
     <a
       href=`${config.SITE_ROOT}/rss.xml`
@@ -42,7 +43,7 @@ import { config } from "../../my.config";
       aria-label="RSS Feed"
       class="text-gray-400 hover:text-white"
     >
-      <i class="fa fa-rss text-2xl"></i>
+    <Icon name="rss" className="fill-gray-400 w-6 h-6 hover:fill-white text-2xl" />
     </a>
   </div>
   <p class="text-md">2024 © Steven Thewissen</p>

@@ -1,5 +1,6 @@
 ---
 import { config } from "../../my.config";
+import Icon from "./icon.astro";
 ---
 
 <header class="bg-white font-header">
@@ -44,42 +45,42 @@ import { config } from "../../my.config";
     </nav>
 
     <!-- Social Icons -->
-    <div class="hidden md:flex space-x-4">
+    <div class="hidden md:flex items-center space-x-4">
       <a
         href={config.BLUESKY_LINK}
         aria-label="BlueSky"
         class="hover:text-brand transition"
       >
-        <i class="fa-brands fa-bluesky"></i>
+      <Icon name="bluesky" className=" w-4 h-4 hover:fill-brand" />
       </a>
       <a
         href={config.GITHUB_LINK}
         aria-label="GitHub"
         class="hover:text-brand transition"
       >
-        <i class="fa-brands fa-github"></i>
+      <Icon name="github" className=" w-4 h-4 hover:fill-brand" />
       </a>
       <a
         href={config.LINKEDIN_LINK}
         aria-label="LinkedIn"
         class="hover:text-brand transition"
       >
-        <i class="fa-brands fa-linkedin"></i>
+      <Icon name="linkedin" className=" w-4 h-4 hover:fill-brand" />
       </a>
       <a
         href={config.XBOX_LINK}
         aria-label="Xbox"
         class="hover:text-brand transition"
       >
-        <i class="fa-brands fa-xbox"></i>
+      <Icon name="xbox" className=" w-4 h-4 hover:fill-brand" />
       </a>
       <a
         href=`${config.SITE_ROOT}/rss.xml`
         target="_blank"
         aria-label="RSS Feed"
         class="hover:text-brand transition"
-      >
-        <i class="fa fa-rss"></i>
+      >      
+      <Icon name="rss" className=" w-4 h-4 hover:fill-brand" />
       </a>
     </div>
 
@@ -98,34 +99,34 @@ import { config } from "../../my.config";
       <a href="/#creative" class="hover:text-brand lowercase cursor-pointer text-lg transition">Creative</a>
       <a href="/#contact" class="hover:text-brand lowercase cursor-pointer text-lg transition">Contact</a>
     </nav>
-    <div class="flex justify-center space-x-4 py-4">
+    <div class="flex items-center justify-center space-x-4 py-4">
       <a
         href={config.BLUESKY_LINK}
         aria-label="BlueSky"
         class="hover:text-brand transition"
       >
-        <i class="fa-brands fa-bluesky"></i>
+      <Icon name="bluesky" className=" w-4 h-4 hover:fill-brand" />
       </a>
       <a
         href={config.GITHUB_LINK}
         aria-label="GitHub"
         class="hover:text-brand transition"
       >
-        <i class="fa-brands fa-github"></i>
+      <Icon name="github" className=" w-4 h-4 hover:fill-brand" />
       </a>
       <a
         href={config.LINKEDIN_LINK}
         aria-label="LinkedIn"
         class="hover:text-brand transition"
       >
-        <i class="fa-brands fa-linkedin"></i>
+      <Icon name="linkedin" className=" w-4 h-4 hover:fill-brand" />
       </a>
       <a
         href={config.XBOX_LINK}
         aria-label="Xbox"
         class="hover:text-brand transition"
       >
-        <i class="fa-brands fa-xbox"></i>
+      <Icon name="xbox" className=" w-4 h-4 hover:fill-brand" />
       </a>
       <a
         href=`${config.SITE_ROOT}/rss.xml`
@@ -133,7 +134,7 @@ import { config } from "../../my.config";
         aria-label="RSS Feed"
         class="hover:text-brand transition"
       >
-        <i class="fa fa-rss"></i>
+      <Icon name="rss" className=" w-4 h-4 hover:fill-brand" />
       </a>
     </div>
   </div>
