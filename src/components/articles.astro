@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import { config } from "../../my.config";
-import { Image } from 'astro:assets';
+import { Image, Picture } from 'astro:assets';
 
 const featuredPost = (await getCollection("articles"))
   .sort(
@@ -52,9 +52,11 @@ const posts = (await getCollection("articles"))
       <div class="lg:col-span-2">
         <div class="w-full relative mx-auto h-auto overflow-hidden">
           <a href={featuredPost[0].link} class="cursor-pointer">
-            <Image
+            <Picture
               src={featuredPost[0].image}
               alt={featuredPost[0].title}
+              quality={100}
+              height={250}
               class="w-full relative object-cover transition-all duration-300 hover:scale-110"
             />
           </a>
@@ -91,8 +93,11 @@ const posts = (await getCollection("articles"))
               <div class="flex items-start">
                 <div class="w-16 h-16 relative overflow-hidden flex-shrink-0">
                   <a href={article.link} class="cursor-pointer">
-                    <Image
+                    <Picture
                       src={article.image}
+                      height={64}
+                      loading="eager"
+                      quality={100}
                       alt={article.title}
                       class="w-16 h-16 object-cover relative transition-all duration-300 hover:scale-110"
                     />

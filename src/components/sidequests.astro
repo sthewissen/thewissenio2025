@@ -40,6 +40,7 @@ const sidequests = (await getCollection("sidequests"))
             <Image
               src={sidequest.image}
               alt={sidequest.title}
+              quality={100}
               class="w-full h-auto object-cover transition-transform duration-300"
             />
             <div class="overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-white p-4 transition-opacity duration-300">
