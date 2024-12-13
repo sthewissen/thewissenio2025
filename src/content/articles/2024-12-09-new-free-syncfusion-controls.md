@@ -3,7 +3,7 @@ title: Another set of free Syncfusion controls!
 pubDate: 2024-12-09
 slug: free-syncfusion-for-net-maui-controls
 image: 
-   url: '/images/headers/sheets.jpg'
+   url: '/images/headers/sheets.webp'
    description: 'Dirty sheets, or just bottom sheets'
 tags: ["maui"]
 excerpt: As developers, we’re always on the lookout for tools that make our lives easier, streamline our workflows, and, let’s face it, cut down the time we spend banging our heads on the keyboard.

@@ -3,7 +3,7 @@ title: Discovering StyleClass in .NET MAUI
 pubDate: 2024-12-01
 slug: discovering-styleclass-and-class-in-net-maui
 image: 
-   url: '/images/headers/styleclass.jpg'
+   url: '/images/headers/styleclass.webp'
 tags: ["maui"]
 excerpt: In .NET MAUI, the StyleClass attribute allows you to define and apply consistent styles to UI elements across your application. Think CSS, but in XAML. Using StyleClass makes it a lot easier to manage and update your app's design.
 ---
