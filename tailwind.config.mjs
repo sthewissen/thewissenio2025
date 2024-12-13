@@ -14,7 +14,7 @@ export default {
 				extra: '#f2fcfa',
 				light: '#e5f5f2', // light variant
 				DEFAULT: '#1cba9b', // main brand color
-				dark: '#19a489', // dark variant
+				dark: '#149b7f', // dark variant
 			  },
 			  'custom-gray': '#606060',
 			},
