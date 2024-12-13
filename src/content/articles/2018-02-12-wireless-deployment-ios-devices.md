@@ -3,8 +3,7 @@ title: Wireless Deployment of Xamarin apps to your iOS devices
 pubDate: 2018-02-12
 slug: wireless-deployment-ios-devices
 tags: ["xamarin"]
-image: 
-    url: '/images/headers/cables.jpg'
+image: '../../assets/headers/cables.jpg'
 ---
 
 If you're anything like me you probably have an iPhone cable near you at all times when working on a Xamarin app. It will probably look like it has seen better days but it still works doesn't it?

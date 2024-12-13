@@ -2,8 +2,7 @@
 title: How to provide negative numeric input on Xamarin.Forms iOS
 pubDate: 2020-10-06
 slug: how-to-provide-negative-numeric-input-on-xamarin-forms-ios
-image: 
-    url: '/images/headers/keyboard.jpeg'
+image: '../../assets/headers/keyboard.jpeg'
 tags:  ["xamarin", "xamarin.forms", "ui"]
 ---
 When creating a text input in Xamarin.Forms you might want to show a numeric keyboard. However, when setting it up and running your app on iOS you can't put in negative numbers. What's up with that?

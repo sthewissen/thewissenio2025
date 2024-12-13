@@ -3,8 +3,7 @@ title: Xamarin.Forms and the Xamarin Test Recorder
 pubDate: 2016-06-09
 tags: ["xamarin"]
 slug: xamarin-forms-xamarin-test-recorder
-image: 
-    url: '/images/headers/phonebooths.jpg'
+image: '../../assets/headers/phonebooths.jpg'
 ---
 
 One of the recent additions to the Xamarin family of products is the Xamarin Test Recorder. What this nifty little tool does is allow you to record your UI tests while you're navigating through your app and export them into either your codebase or the Xamarin Test Cloud. If you're not familiar with what the Test Cloud is it's basically a warehouse full of devices in Denmark that you can get computing time on to test your app. Let's face it, no one has 2000+ physical devices to test on so this offering paired with an easy to use recorder app can help definitely help you out when you want to put an app in the AppStore. Currently the Test Recorder is still in preview on the Mac so you probably should use it with caution, but let's be brave and take it for a spin shall we?

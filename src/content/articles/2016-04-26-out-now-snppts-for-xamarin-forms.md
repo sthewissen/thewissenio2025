@@ -3,8 +3,7 @@ title: 'Out now: Snppts for Xamarin Forms!'
 pubDate: 2016-04-26
 tags: ["xamarin"]
 slug: out-now-snppts-for-xamarin-forms
-image: 
-    url: '/images/headers/scissors.jpg'
+image: '../../assets/headers/scissors.jpg'
 ---
 
 After a few months of development we are proud to announce a new service for everyone interested in Xamarin and Xamarin Forms specifically! 

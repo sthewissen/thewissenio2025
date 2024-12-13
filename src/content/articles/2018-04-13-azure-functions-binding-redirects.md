@@ -3,8 +3,7 @@ title: Performing a binding redirect in Azure Functions
 pubDate: 2018-04-13
 slug: azure-functions-binding-redirects
 tags: ["xamarin"]
-image: 
-    url: '/images/headers/clouds.jpg'
+image: '../../assets/headers/clouds.jpg'
 ---
 
 I've blogged about Azure Functions before and have speaken highly of it as well. While diving deeper into them there are definitely some drawbacks to be found though. How about doing a binding redirect?

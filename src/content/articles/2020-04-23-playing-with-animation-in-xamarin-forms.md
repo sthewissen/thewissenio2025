@@ -3,8 +3,7 @@ title: Playing with animation in Xamarin.Forms
 pubDate: 2020-04-23
 slug: playing-with-animation-in-xamarin-forms
 tags: ["xamarin", "xamarin.forms", "ui"]
-image: 
-    url: '/images/headers/animation.jpeg'
+image: '../../assets/headers/animation.jpeg'
 ---
 Movement breathes life into your app. But getting started with animation in Xamarin.Forms might not be the simplest thing. This post explains how to get started with creating some cool animations you can use to spice up your app.
 

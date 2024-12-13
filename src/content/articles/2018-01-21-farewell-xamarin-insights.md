@@ -3,8 +3,7 @@ title: A farewell to our beloved Xamarin Insights?
 pubDate: 2018-01-21
 slug: farewell-xamarin-insights
 tags: ["xamarin"]
-image:
-    url: '/images/headers/insights.jpg'
+image: '../../assets/headers/insights.jpg'
 ---
 
 In October of 2014 Xamarin announced one of their new flagship products: Xamarin Insights, a real-time monitoring system that enables you to identify, report, and track issues that are impacting users. Now the time has come to say our goodbyes.

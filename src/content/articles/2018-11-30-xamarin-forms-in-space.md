@@ -3,8 +3,7 @@ title: Xamarin.Forms in Space!
 pubDate: 2018-11-30
 slug: xamarin-forms-in-space
 tags: ["xamarin"]
-image:
-   url: '/images/headers/space.jpg'
+image: '../../assets/headers/space.jpg'
 ---
 
 As you may have seen from reading other content on this blog I dabble in the world of cryptocurrency. To help me on my position sizing I figured I'd create a little calculator app. Obviously, if you know me, that has to look sexy. So I decided to go on a journey into space using Xamarin.Forms! 

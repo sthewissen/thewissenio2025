@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import { config } from "../../my.config";
+import { Image } from 'astro:assets';
 
 const featuredPost = (await getCollection("articles"))
   .sort(
@@ -10,7 +11,7 @@ const featuredPost = (await getCollection("articles"))
   .slice(0, 1) // Limit to the last article
   .map((post) => ({
     title: post.data.title,
-    image: post.data.image.url,
+    image: post.data.image,
     excerpt: post.data.excerpt,
     link: `/${post.slug}/`,
     date: new Intl.DateTimeFormat("en-US", {
@@ -32,7 +33,7 @@ const posts = (await getCollection("articles"))
   .map((post) => ({
     title: post.data.title,
     link: `/${post.slug}/`,
-    image: post.data.image.url,
+    image: post.data.image,
     date: new Intl.DateTimeFormat("en-US", {
       month: "long",
       year: "numeric",
@@ -51,8 +52,7 @@ const posts = (await getCollection("articles"))
       <div class="lg:col-span-2">
         <div class="w-full relative mx-auto h-auto overflow-hidden">
           <a href={featuredPost[0].link} class="cursor-pointer">
-            <img
-              loading="eager"
+            <Image
               src={featuredPost[0].image}
               alt={featuredPost[0].title}
               class="w-full relative object-cover transition-all duration-300 hover:scale-110"
@@ -78,7 +78,6 @@ const posts = (await getCollection("articles"))
         </a>
         </div>
       </div>
-
       <!-- Right Column: Additional Articles -->
       <div>
         <h3
@@ -92,10 +91,9 @@ const posts = (await getCollection("articles"))
               <div class="flex items-start">
                 <div class="w-16 h-16 relative overflow-hidden flex-shrink-0">
                   <a href={article.link} class="cursor-pointer">
-                    <img
+                    <Image
                       src={article.image}
                       alt={article.title}
-                      loading="eager"
                       class="w-16 h-16 object-cover relative transition-all duration-300 hover:scale-110"
                     />
                   </a>

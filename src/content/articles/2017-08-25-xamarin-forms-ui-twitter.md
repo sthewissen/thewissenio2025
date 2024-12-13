@@ -3,8 +3,7 @@ title: 'Creating a good-looking Xamarin.Forms UI: Twitter'
 pubDate: 2017-08-25
 slug: xamarin-forms-ui-twitter
 tags: ["xamarin"]
-image:
-   url: '/images/headers/crayons.jpg'
+image: '../../assets/headers/crayons.jpg'
 ---
 
 I love tinkering with UI. There, I said it. Even though I'm a developer first and foremost I cannot help the fact that any mobile app UI I create has to look fancy. However most of my development work takes place in Xamarin Forms. Can those two worlds be combined?

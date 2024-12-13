@@ -3,8 +3,7 @@ title: Crash Reporting and Analytics for Xamarin
 pubDate: 2017-07-14
 slug: crash-reporting-analytics-xamarin
 tags: ["xamarin"]
-image:
-   url: '/images/headers/crash.jpg'
+image: '../../assets/headers/crash.jpg'
 ---
 
 Knowing what your app is doing after you've released it into the wild is very important. When it comes to Xamarin there are several products that offer functionality such as crash reporting and analytics.. So what should you be using these days?  

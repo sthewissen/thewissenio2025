@@ -3,8 +3,7 @@ title: Using Effects in Xamarin Forms
 pubDate: 2017-09-11
 slug: effects-xamarin-forms
 tags: ["xamarin"]
-image:
-   url: '/images/headers/effects.jpg'
+image: '../../assets/headers/effects.jpg'
 ---
 
 Developers can use Effects in Xamarin Forms to customize native controls and add some styling of their own. But why not simply use a custom renderer to achieve the same thing? While that is certainly possible there are some benefits to Effects.

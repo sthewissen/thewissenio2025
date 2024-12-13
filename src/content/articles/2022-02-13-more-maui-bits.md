@@ -2,8 +2,7 @@
 title: More MAUI bits!
 pubDate: 2022-02-13
 slug: more-maui-bits
-image:
-    url: "/images/headers/maui4.jpg"
+image: "../../assets/headers/maui4.jpg"
 tags: ["xamarin","xamarin.forms","maui"]
 excerpt: This post covers a few different topics, namely single project, the Xamarin Community Toolkit and migrating from Xamarin.Forms to MAUI.
 ---

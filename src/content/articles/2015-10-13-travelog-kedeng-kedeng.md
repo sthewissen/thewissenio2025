@@ -3,8 +3,7 @@ title: 'Travelog: Kedeng kedeng...'
 pubDate: 2015-10-13
 tags: ["travel", "dutch"]
 slug: travelog-kedeng-kedeng
-image:
-    url: "/images/headers/bangkok3.jpg"
+image: "../../assets/headers/bangkok3.jpg"
 ---
 
 Het was een rustig dagje in Bangkok gisteren. Uitslapen, relaxed alles inpakken en uiteindelijk naar het station zien te komen voor een zo goedkoop mogelijke prijs want afdingen is hier gewoonte. Zelfs als je een akkoord bereikt heb je het gevoel dat je afgezet wordt.

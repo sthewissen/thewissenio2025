@@ -2,8 +2,7 @@
 title: Styling the Android bottom tabs animation behavior and font
 pubDate: 2021-01-12
 slug: styling-the-android-bottom-tabs-animation-behavior-and-font
-image:
-   url: '/images/headers/tabs.jpeg'
+image: '../../assets/headers/tabs.jpeg'
 tags:  ["xamarin", "xamarin.forms", "ui"]
 ---
 I recently used the bottom tabs navigation for Android, which comes with a fancy animation scaling the selected item. But what if you don't want that?

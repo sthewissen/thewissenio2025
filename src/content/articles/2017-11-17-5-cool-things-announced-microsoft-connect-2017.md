@@ -3,8 +3,7 @@ title: 5 cool things announced at Microsoft Connect 2017
 pubDate: 2017-11-17
 slug: 5-cool-things-announced-microsoft-connect-2017
 tags: ["xamarin"]
-image: 
-    url: '/images/headers/newyork.jpg'
+image: '../../assets/headers/newyork.jpg'
 ---
 
 Microsoft Connect 2017 has come and gone and a lot of new awesome stuff was announced across the board. I'm partial to mobile development using Xamarin and the whole Devops process using VSTS, so here’s 5 things from the mobile/devops space that I thought were pretty cool! 

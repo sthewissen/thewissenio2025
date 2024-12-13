@@ -3,8 +3,7 @@ title: Checking out Mobile Center
 pubDate: 2017-08-22
 slug: checking-out-mobile-center
 tags: ["xamarin"]
-image:
-   url: '/images/headers/phone-1.jpg'
+image: '../../assets/headers/phone-1.jpg'
 ---
 
 I've talked about [continuously building and deploying](https://www.thewissen.io/xamarin-devops-build-agent/) your mobile apps using VSTS before. But there's a simpler alternative in the works at Microsoft; **Mobile Center**. So let's have a quick look at it!

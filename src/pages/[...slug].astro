@@ -2,6 +2,7 @@
 import Layout from "../layouts/layout.astro";
 import { getCollection } from "astro:content";
 import { config } from "../../my.config";
+import { Image } from 'astro:assets';
 
 export async function getStaticPaths() {
   const articles = await getCollection("articles");
@@ -30,8 +31,9 @@ const metadata = {
   pageTitle: `${entry.data.title}`,
   pageDescription: entry.data.excerpt || "Read this amazing article. You know you want to.",
   pageUrl: `${config.SITE_ROOT}/${entry.slug}`,
-  pageImage: entry.data.image.url || `${config.SITE_ROOT}/default.png`,
+  pageImage: entry.data.image.src || `${config.SITE_ROOT}/default.png`,
 };
+
 ---
 
 <Layout {...metadata}>
@@ -56,9 +58,9 @@ const metadata = {
   
     <!-- Article Image -->
     <div class="mb-10 w-full shadow-lg relative mx-auto h-auto overflow-hidden">
-      <img
-        src={entry.data.image.url}
-        alt={entry.data.image.description}
+      <Image
+        src={entry.data.image}
+        alt={entry.data.title}
         class="w-full relative object-cover transition-all duration-[5000ms] hover:scale-110"
       />
     </div>

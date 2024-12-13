@@ -3,8 +3,7 @@ title: Live-streaming on a budget... sort of... maybe...
 pubDate: 2020-05-19
 slug: live-streaming-on-a-budget-sort-of-maybe
 tags: ["xamarin"]
-image:
-    url: '/images/headers/lonely.jpeg'
+image: '../../assets/headers/lonely.jpeg'
 excerpt: With COVID-19 keeping the world in its grasp your existing hobbies might not exist anymore. Same here. So it's time to start some new ones! This is part 1 of me talking about my live-streaming experiences so far.  
 ---
 

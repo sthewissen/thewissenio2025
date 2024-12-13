@@ -63,7 +63,7 @@ const processedArticles = await Promise.all(
             data-content={article.truncatedContent.toLowerCase()}
           >
             <img
-              src={article.data.image.url}
+              src={article.data.image.src}
               alt={article.data.title}
               loading="lazy"
               class="w-full h-48 object-cover"

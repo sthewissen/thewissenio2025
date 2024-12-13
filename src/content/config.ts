@@ -3,32 +3,28 @@ import { z, defineCollection } from "astro:content";
 
 // Define a `type` and `schema` for each collection
 const articlesCollection = defineCollection({
-    type: 'content',
-    schema: z.object({
-      title: z.string(),
-      pubDate: z.date(),
-      excerpt: z.string().optional(),
-      image: z.object({
-        url: z.string()
-      }),
-      tags: z.array(z.string())
-    })
+  type: 'content',
+  schema: ({ image }) => z.object({
+    title: z.string(),
+    pubDate: z.date(),
+    excerpt: z.string().optional(),
+    image: image(),
+    tags: z.array(z.string())
+  }),
 });
 
-const sideQuestsCollection = defineCollection({
+const sidequestsCollection = defineCollection({
   type: 'content',
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string().optional(),
     pubDate: z.date(),
-    image: z.object({
-      url: z.string()
-    })
-  })
+    image: image()
+  }),
 });
 
 // Export a single `collections` object to register your collection(s)
 export const collections = {
     articles: articlesCollection,
-    sideQuests: sideQuestsCollection
+    sidequests: sidequestsCollection
 };

@@ -3,8 +3,7 @@ title: 'Travelog: Oh my Buddha...'
 pubDate: 2015-10-19
 tags: ["travel", "dutch"]
 slug: travelog-oh-my-buddha
-image:
-    url: "/images/headers/phuket2.jpg"
+image: "../../assets/headers/phuket2.jpg"
 ---
 
 Daar zitten we dan na een binnenlandse vlucht van Chiang Mai (het noorden) naar Phuket (het zuiden) van een goeie twee uur. Klaar om aan het strandgedeelte van de vakantie te beginnen. Helaas zonder onze reisgenoten Ben, Asha en Luuk, waar we met Marco Borsato's "Afscheid nemen bestaat niet" op de achtergrond in een goede janksessie vaarwel tegen gezegd hebben (ik overdrijf wellicht iets).

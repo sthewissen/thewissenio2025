@@ -3,8 +3,7 @@ title: Generating your own custom icon font made easy
 pubDate: 2020-03-26
 slug: generating-your-own-custom-icon-font-made-easy
 tags: ["xamarin"]
-image:
-   url: '/images/headers/letters.jpg'
+image: '../../assets/headers/letters.jpg'
 ---
 Using an icon font in your app [has been all the rage](https://www.thewissen.io/using-custom-fonts-in-xamarin-forms/) for a while now, but what if the existing ones aren't to your liking? It's pretty easy to make your own if you have vector art available for them. Let's take a peek!
 

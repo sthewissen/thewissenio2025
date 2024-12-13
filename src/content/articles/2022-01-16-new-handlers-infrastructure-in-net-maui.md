@@ -2,8 +2,7 @@
 title: The new handlers infrastructure in .NET MAUI
 pubDate: 2022-01-16
 slug: new-handlers-infrastructure-in-net-maui
-image:
-    url: "/images/headers/maui2.jpg"
+image: "../../assets/headers/maui2.jpg"
 tags: ["xamarin","xamarin.forms","maui"]
 excerpt: If you’ve ever done any Xamarin.Forms development you might be aware of the concept of a renderer. This is a piece of code that takes care of rendering a specific control to the screen in a consistent way across each platform.
 ---

@@ -3,8 +3,7 @@ title: Embedding a YouTube feed in Xamarin.Forms
 pubDate: 2017-06-20
 slug: embedding-youtube-feed-xamarin-forms
 tags: [ "xamarin", "xamarin.forms" ]
-image:
-   url: "/images/headers/youtube.jpg"
+image: "../../assets/headers/youtube.jpg"
 ---
 
 

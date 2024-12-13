@@ -3,8 +3,7 @@ title: 'Creating a good-looking Xamarin Forms UI: Spotify'
 pubDate: 2017-09-20
 slug: xamarin-forms-ui-spotify
 tags: ["xamarin"]
-image:
-   url: '/images/headers/muse.jpg'
+image: '../../assets/headers/muse.jpg'
 ---
 
 It seems like people really like this kind of content, so I decided to keep it up for now. This is the third instalment in this series already and this time we're going to be taking a look at the **Spotify** UI!

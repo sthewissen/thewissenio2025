@@ -3,8 +3,7 @@ title: Snppts Challenge Wrap-up
 pubDate: 2019-12-03
 slug: snppts-challenge-wrap-up
 tags: ["xamarin"]
-image:
-   url: '/images/headers/crafts.jpg'
+image: '../../assets/headers/crafts.jpg'
 ---
 A while ago we started [the Snppts Challenge](https://www.thewissen.io/snppts-community-challenge/), asking you to submit your good-looking UIs to the platform and promising swag in the process. Now that the deadline has passed, let’s take a quick look back on this challenge!
 

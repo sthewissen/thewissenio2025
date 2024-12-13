@@ -2,8 +2,7 @@
 title: DebugRainbows for .NET MAUI now available!
 pubDate: 2024-03-27
 slug: debug-rainbows-rereleased
-image:
-    url: "/images/headers/debugrainbows.webp"
+image: "../../assets/headers/debugrainbows.webp"
 tags: ["maui", "debugrainbows", "nuget"]
 excerpt: After what seems to have been an eternity of me procrastinating, it's finally time for the comeback of a true debugging superhero - DebugRainbows! 🦸‍♂️
 ---

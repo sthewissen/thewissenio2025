@@ -3,8 +3,7 @@ title: Revisiting the base page concept using ContentView - Part 1
 pubDate: 2020-06-30
 slug: revisiting-the-base-page-concept-using-contentview
 tags: ["xamarin", "xamarin.forms", "ui"]
-image: 
-    url: '/images/headers/stairs.jpeg'
+image: '../../assets/headers/stairs.jpeg'
 ---
 A while ago [I wrote a blog](https://www.thewissen.io/create-a-kickass-banking-app-using-a-basepage-in-xamarin/) about using the concept of a base page in Xamarin.Forms. Since people are still looking at options to swap out native controls for custom implementations due to complex visual requirements it might be worth revisiting this topic! 
 

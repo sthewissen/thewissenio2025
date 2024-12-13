@@ -3,8 +3,7 @@ title: Introducing Xamarin UI July
 pubDate: 2019-06-07
 slug: introducing-xamarin-ui-july
 tags: ["xamarin"]
-image:
-   url: '/images/headers/monkeys-1.jpg'
+image: '../../assets/headers/monkeys-1.jpg'
 ---
 
 Fellow community member [Luis Matos](https://luismts.com) has recently held a Xamarin Month initiative. During the entire month of February, someone from the community / Xamarin team posted a blog about Xamarin-related topics. I would love to give the concept a shot as well!

@@ -2,8 +2,7 @@
 title: Adaptive Icons in Android
 pubDate: 2021-06-15
 slug: adaptive-icons-in-android
-image: 
-    url: '/images/headers/resurface.jpg'
+image: '../../assets/headers/resurface.jpg'
 tags: ["xamarin", "xamarin.forms", "ui"]
 ---
 Recently I've picked up a few little projects again after having been on a hiatus of sorts. I noticed I hadn't blogged for a while either, so it's time to kill a few birds with this one little stone in my hand, eh? 

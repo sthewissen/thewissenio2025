@@ -2,8 +2,7 @@
 title: Building a .NET MAUI Android pipeline in GitHub Actions
 pubDate: 2023-11-19
 slug: making-maui-cd-pipeline-part3
-image:
-    url: "/images/headers/pipeline3.webp"
+image: "../../assets/headers/pipeline3.webp"
 tags: ["maui", "continuous-delivery", "github-actions"]
 excerpt: This is the third and last post covering how to build a GitHub Actions pipeline and have it build your .NET MAUI application for both Android and iOS.
 ---

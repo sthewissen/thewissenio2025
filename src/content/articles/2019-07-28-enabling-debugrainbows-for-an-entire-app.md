@@ -3,8 +3,7 @@ title: 'Quick tip: Enabling DebugRainbows for an entire app'
 pubDate: 2019-07-28
 slug: enabling-debugrainbows-for-an-entire-app
 tags: ["xamarin"]
-image:
-   url: '/images/headers/candy.jpg'
+image: '../../assets/headers/candy.jpg'
 ---
 
 If you're like me and mess around with UI in Xamarin.Forms a lot you might've come across the problem of a control or view not displaying as you'd expect it to. This little package may help you in finding out why.

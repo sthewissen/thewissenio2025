@@ -3,8 +3,7 @@ title: Using custom fonts in Xamarin Forms
 pubDate: 2016-02-15
 slug: using-custom-fonts-in-xamarin-forms
 tags: ["xamarin"]
-image: 
-    url: "/images/headers/flags.jpg"
+image: "../../assets/headers/flags.jpg"
 ---
 
 Xamarin Forms is a great platform for quickly making multi-platform mobile apps. Xamarin markets it as a platform that isn't quite suited for creating complex UIs but that doesn't necessarily have to be the case. When it comes to branding your app using a custom font can go a long way. 

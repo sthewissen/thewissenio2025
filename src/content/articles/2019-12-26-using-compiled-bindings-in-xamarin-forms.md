@@ -3,8 +3,7 @@ title: Using compiled bindings in Xamarin.Forms
 pubDate: 2019-12-26
 slug: using-compiled-bindings-in-xamarin-forms
 tags: ["xamarin"]
-image:
-   url: '/images/headers/crayons-1.jpg'
+image: '../../assets/headers/crayons-1.jpg'
 ---
 As a Xamarin developer, you have surely come across a scenario where you've mistyped a binding and didn't figure it out until hours later. Let's see if we can improve that with XAML compilation and compiled bindings!
 

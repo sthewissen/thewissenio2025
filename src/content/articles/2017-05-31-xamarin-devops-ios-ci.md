@@ -3,8 +3,7 @@ title: 'Xamarin and DevOps: Setting up your iOS CI'
 pubDate: 2017-05-31
 slug: xamarin-devops-ios-ci
 tags: ["xamarin"]
-image: 
-    url: '/images/headers/apples.jpg'
+image: '../../assets/headers/apples.jpg'
 ---
 
 Congratulations, you've made it to the third post in this series on getting started with DevOps in a Xamarin project. Last time we created a Continuous Integration pipeline for Android so this time it's iOS' turn! A lot of things will look familiar if you followed along with the previous post but for the sake of  completeness I will include it here.

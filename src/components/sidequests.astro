@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import { config } from "../../my.config";
+import { Image } from 'astro:assets';
 
 const sidequests = (await getCollection("sidequests"))
   .sort(
@@ -11,7 +12,7 @@ const sidequests = (await getCollection("sidequests"))
   .map((post) => ({
     title: post.data.title,
     description: post.data.description,
-    image: post.data.image.url,
+    image: post.data.image,
     date: new Intl.DateTimeFormat("en-US", {
       month: "long",
       year: "numeric",
@@ -36,8 +37,7 @@ const sidequests = (await getCollection("sidequests"))
       {
        sidequests.map((sidequest) => (
           <div class="sidequest relative break-inside-avoid overflow-hidden bg-gray-200 group">
-            <img
-              loading="lazy"
+            <Image
               src={sidequest.image}
               alt={sidequest.title}
               class="w-full h-auto object-cover transition-transform duration-300"

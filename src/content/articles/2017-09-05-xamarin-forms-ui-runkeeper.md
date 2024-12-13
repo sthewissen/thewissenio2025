@@ -3,8 +3,7 @@ title: 'Creating a good-looking Xamarin Forms UI: Runkeeper'
 pubDate: 2017-09-05
 slug: xamarin-forms-ui-runkeeper
 tags: ["xamarin"]
-image:
-   url: '/images/headers/running.jpg'
+image: '../../assets/headers/running.jpg'
 ---
 
 My previous post about creating a fancy Xamarin Forms UI was a whole lot of fun to do and I got some awesome feedback so it's time for another. Since running is one of my hobbies I see a whole lot of this app up close. It's both as simple in design as it is functional which makes it a great case for this; **Runkeeper**!

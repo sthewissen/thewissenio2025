@@ -2,8 +2,7 @@
 title: "Goodbye Xamarin!"
 pubDate: 2024-05-07
 slug: "goodbye-xamarin"
-image:
-    url: "/images/headers/xamasunset.webp"
+image: "../../assets/headers/xamasunset.webp"
 tags: ["maui", "xamarin"]
 excerpt: As of May 1st, 2024, we have officially bid adieu to Xamarin, marking the end of an era in cross-platform mobile development. Microsoft's decision to discontinue support for Xamarin undoubtedly brings a mix of emotions for developers who have relied on it to create native mobile apps.
 ---

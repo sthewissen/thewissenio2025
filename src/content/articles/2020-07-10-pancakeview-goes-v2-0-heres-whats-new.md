@@ -3,8 +3,7 @@ title: PancakeView goes v2.0! Here's what's new.
 pubDate: 2020-07-10
 slug: pancakeview-goes-v2-0-heres-whats-new
 tags:  ["xamarin", "xamarin.forms", "nuget", "plugins"]
-image: 
-    url: '/images/headers/pancakes_smile.jpeg'
+image: '../../assets/headers/pancakes_smile.jpeg'
 ---
 It's been in the making for quite a while and the road to getting to the end result has been quite a struggle. However, it's finally time to release version 2.0 of PancakeView!
 

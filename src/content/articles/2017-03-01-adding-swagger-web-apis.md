@@ -3,8 +3,7 @@ title: Adding some Swagger to your Web APIs
 pubDate: 2017-03-01
 tags: ["xamarin"]
 slug: adding-swagger-web-apis
-image: 
-    url: '/images/headers/treasure.jpg'
+image: '../../assets/headers/treasure.jpg'
 ---
 
 In a Web API project I recently started working on I found that testing it using a tool like Postman works pretty well, but having to type out all your test requests can become quite tedious. That's about the time Swagger and Swashbuckle came along to play!

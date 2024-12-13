@@ -3,8 +3,7 @@ title: 'Xamarin and DevOps: The build agent'
 pubDate: 2017-05-14
 tags: ["xamarin"]
 slug: xamarin-devops-build-agent
-image: 
-    url: '/images/headers/coulson.jpg'
+image: '../../assets/headers/coulson.jpg'
 ---
 
 This is the first post in a series on getting started with DevOps in a Xamarin project. One of the cornerstones of DevOps is automating a lot of tedious work such as builds, releases and testing. With this series I hope to clarify how I go about setting up my automation processes using tools like Visual Studio Team Services (VSTS), HockeyApp and Xamarin TestCloud. First up: setting up a build agent!

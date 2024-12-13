@@ -3,8 +3,7 @@ title: Creating an encyclopedia page in Xamarin.Forms
 pubDate: 2019-02-07
 slug: creating-an-encyclopedia-page-in-xamarin-forms
 tags: ["xamarin"]
-image:
-   url: '/images/headers/pexels-photo-1356304.jpeg'
+image: '../../assets/headers/pexels-photo-1356304.jpeg'
 ---
 
 If you frequent this blog you probably know I like creating cool-looking stuff in Xamarin.Forms. Since that's what I like doing, why would I stop? So here's another one!

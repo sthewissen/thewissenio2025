@@ -3,8 +3,7 @@ title: Xamarin.Forms 4.2.0 is out!
 pubDate: 2019-08-23
 slug: xamarin-forms-4-2-0-is-out
 tags: ["xamarin"]
-image:
-   url: '/images/headers/mountains.jpg'
+image: '../../assets/headers/mountains.jpg'
 ---
 
 A new version of Xamarin.Forms has hit NuGet feeds around the globe. Let's take a quick peek at what has changed under the hood!

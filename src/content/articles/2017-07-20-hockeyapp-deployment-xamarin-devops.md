@@ -3,8 +3,7 @@ title: 'Xamarin and DevOps: Deploying to HockeyApp'
 pubDate: 2017-07-20
 slug: hockeyapp-deployment-xamarin-devops
 tags: ["xamarin"]
-image:
-   url: '/images/headers/apptest.jpg'
+image: '../../assets/headers/apptest.jpg'
 ---
 
 In the previous articles in this series we set up our CI builds and versioned our app. Now we need to be talking about distribution. This is a vital part of any DevOps pipeline. In this blogpost we will be deploying our app to the HockeyApp platform which means it can be distributed to testers and stakeholders alike! 

@@ -2,8 +2,7 @@
 title: A quick introduction to .NET MAUI
 pubDate: 2021-11-11
 slug: a-quick-introduction-to-dotnet-maui
-image: 
-    url: '/images/headers/maui.jpg'
+image: '../../assets/headers/maui.jpg'
 tags: ["xamarin","xamarin.forms","maui"]
 ---
 Have you ever done any mobile development in the Microsoft ecosystem? Then you might’ve heard about Xamarin. The technique, at this point synonymous with the company that originally built it, goes back all the way to 2011. It has been Microsoft’s main mobile development offering since 2016, when they acquired the company. 
