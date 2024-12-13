@@ -1,0 +1,20 @@
+---
+interface Props {
+  name: string;
+  className?: string;
+}
+
+const { name, className = '' } = Astro.props;
+import fs from 'fs';
+import path from 'path';
+
+// Load SVG
+const svgPath = path.join('./src/icons', `${name}.svg`);
+const svgContent = fs.existsSync(svgPath) ? fs.readFileSync(svgPath, 'utf-8') : '';
+---
+<svg
+  innerHTML={svgContent}
+  class={`${className}`}
+  aria-label={`${name} icon`}
+  role="img"
+/>

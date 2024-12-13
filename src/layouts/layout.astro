@@ -25,22 +25,34 @@ const {
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap"
-      rel="stylesheet"
-    />
+  rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Figtree:wght@300..900&display=swap"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+/>
+<noscript>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Figtree:wght@300..900&display=swap"
+    rel="stylesheet"
+  />
+</noscript>
+
     <MetaHead
       pageTitle={pageTitle}
       pageDescription={pageDescription}
       pageUrl={pageUrl}
       pageImage={pageImage}
     />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9BD4N15MD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-T9BD4N15MD');
+    </script>
     <script type="text/javascript">
       function playAudio(url) {
         var a = new Audio(url);
@@ -59,15 +71,6 @@ const {
     >
       ↑
     </button>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9BD4N15MD"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-T9BD4N15MD');
-    </script>
     <script>
       const scrollToTopButton = document.getElementById("scrollToTopButton");
 
