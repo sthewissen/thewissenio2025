@@ -2,7 +2,7 @@
 title: Adopting the .NET Generic Host
 pubDate: 2022-01-30
 slug: adopting-the-generic-host
-image: "../../assets/headers/maui3.jpg"
+image: "../../assets/headers/maui3.webp"
 tags: ["xamarin","xamarin.forms","maui"]
 excerpt: Coming from the ASP.NET Core space, you may already be aware of the .NET Generic Host model. It provides a clean way to configure and start up your apps. It does so by standardizing things like configuration, dependency injection, logging and more. 
 ---

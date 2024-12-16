@@ -3,7 +3,7 @@ title: 'Travelog: Temple run!'
 pubDate: 2015-10-10
 tags: ["travel", "dutch"]
 slug: travelog-temple-run
-image: "../../assets/headers/bangkok1.jpg"
+image: "../../assets/headers/bangkok1.webp"
 ---
 
 Een dag vol met tempels stond op het programma. Een ware ontdekkingstocht door Bangkok waar het werkelijk barst van die dingen. Hoewel weersvoorspellingen tot nu toe altijd gezegd hebben dat het regent is het een mooie zonnige dag. Gecombineerd met het vochtige weer voelt het alsof je een jasje met zweet aan hebt. Daar komt dan nog bij dat bij de tempels lange broeken en bedekte schouders een must zijn. Na wat kleren gehuurd te hebben gaan we als supertoerist het Grand Palace in. Een complex dat werkelijk stikt van de gebouwtjes waarvan de ene nog meer mozaiekjes heeft dan de ander. Sommige met goud en edelstenen anderen "simpel" met stenen. Erg mooi gedaan.

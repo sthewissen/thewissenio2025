@@ -3,7 +3,7 @@ title: Exploring grid overlays in DebugRainbows
 pubDate: 2020-02-18
 slug: exploring-grid-overlays-in-debugrainbows
 tags: ["xamarin"]
-image: '../../assets/headers/rainbows.jpg'
+image: '../../assets/headers/rainbows.webp'
 ---
 I recently released a new version of my DebugRainbows plugin, which adds grid overlays to the set of debugging tools it offers. Let's take a closer look at what they are and how to use them!
 

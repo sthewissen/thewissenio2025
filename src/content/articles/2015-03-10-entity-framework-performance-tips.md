@@ -3,7 +3,7 @@ title: Entity Framework performance tips
 pubDate: 2015-03-10
 tags: [".net"]
 slug: entity-framework-performance-tips
-image: "../../assets/headers/bolt.jpg"
+image: "../../assets/headers/bolt.webp"
 ---
 
 To honor the name of this blog I will also be writing posts about software development. The software developer that hasn't turned to Google for some advice once in a while hasn't been born yet. As a software developer you cannot know all the ins and outs of your trade. It might sound harsh but some people are probably smarter than you. When I'm looking for articles on code I find it comforting when they're in English. Nothing is worse than looking for a solution or advice and finding out something that might solve your problem is written in a language you don't understand. Enough about me talking English, let's go see some code.

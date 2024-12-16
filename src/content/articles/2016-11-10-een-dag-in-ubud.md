@@ -3,7 +3,7 @@ title: 'Travelog: Een dag in Ubud'
 pubDate: 2016-11-10
 tags: ["travel", "dutch"]
 slug: een-dag-in-ubud
-image: '../../assets/headers/bali2.jpg'
+image: '../../assets/headers/bali2.webp'
 ---
 
 Ruim een jaar geleden tikte ik een serie blogs over ons reisje naar Thailand en nu is het zover; deel 1 uit een nieuwe serie met als onderwerp Bali!

@@ -3,7 +3,7 @@ title: Using Firebase Analytics in your Xamarin.Forms app
 pubDate: 2020-01-08
 slug: using-firebase-analytics-in-your-xamarin-forms-app
 tags: ["xamarin"]
-image: '../../assets/headers/fire.jpg'
+image: '../../assets/headers/fire.webp'
 ---
 We all know and love Microsoft's [AppCenter](https://www.appcenter.ms) offering when it comes to analytics and crash reporting for our mobile apps. But what if you're one of those people that are interested in even more in-depth usage statistics? Let's take a look at Firebase Analytics to satisfy our need for statistics!
 

@@ -3,7 +3,7 @@ title: Implementing MSAL authentication in Xamarin.Forms
 pubDate: 2020-02-04
 slug: implementing-msal-authentication-in-xamarin-forms
 tags: ["xamarin"]
-image: '../../assets/headers/lock.jpg'
+image: '../../assets/headers/lock.webp'
 ---
 Authenticating users in our app is a common challenge that mobile developers need to tackle. Leveraging existing authentication systems like those of social networks or big companies like Microsoft's MSAL saves a lot of development time. But how do we get started?
 Due to the length of this blog post, I figured it would be nice to have a quick index allowing you to skip to all of the relevant topics:

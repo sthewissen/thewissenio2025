@@ -3,7 +3,7 @@ title: 'Deploying Azure Functions using VSTS: a simple solution'
 pubDate: 2017-10-20
 slug: deploying-azure-functions-using-vsts
 tags: ["xamarin"]
-image: '../../assets/headers/lightning.jpg'
+image: '../../assets/headers/lightning.webp'
 ---
 
 I recently started exploring the wonderful world of Azure Functions and while they are a great tool to move towards a cloud-based architecture I started to wonder... How should I be deploying Azure Functions using my existing VSTS setup? 

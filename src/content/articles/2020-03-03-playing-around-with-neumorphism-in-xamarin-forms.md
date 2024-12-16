@@ -3,7 +3,7 @@ title: Playing around with neumorphism in Xamarin.Forms
 pubDate: 2020-03-03
 slug: playing-around-with-neumorphism-in-xamarin-forms
 tags: ["xamarin"]
-image: '../../assets/headers/neomorphism.jpg'
+image: '../../assets/headers/neomorphism.webp'
 ---
 Neumorphism (or neuomorphism) might be a word you've never heard before. If that's the case, then this is the blog post for you! We will take a peek at what it means and how we might be able to achieve it in Xamarin.Forms.
 

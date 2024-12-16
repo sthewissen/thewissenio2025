@@ -3,7 +3,7 @@ title: 'Travelog: Kattenanuskoffie!'
 pubDate: 2016-11-11
 tags: ["travel", "dutch"]
 slug: travelog-kattenanuskoffie
-image: '../../assets/headers/bali8.jpg'
+image: '../../assets/headers/bali8.webp'
 ---
 
 Op het moment van schrijven is het alweer ruim vrijdag, maar onze donderdag had ook nog wel wat moois te bieden. Laten we eens kijken wat er dit keer gebeurd is, shall we?

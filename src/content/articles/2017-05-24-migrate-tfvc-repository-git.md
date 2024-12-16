@@ -3,7 +3,7 @@ title: Migrate your TFVC repository to Git
 pubDate: 2017-05-24
 tags: ["xamarin"]
 slug: migrate-tfvc-repository-git
-image: '../../assets/headers/lego-1.jpg'
+image: '../../assets/headers/lego-1.webp'
 ---
 
 When using Visual Studio Team Services (VSTS) you have the choice to create a repository using Team Foundation Version Control (TFVC) or Git. Up until recently there wasn't really a simple option to migrate from one to the other. Our company is slowly transitioning to Git and now there's a new migration option! 

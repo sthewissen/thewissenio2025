@@ -3,7 +3,7 @@ title: Travel broadens the mind...
 pubDate: 2019-04-03
 slug: travel-broadens-the-mind
 tags: ["xamarin"]
-image: '../../assets/headers/travel.jpg'
+image: '../../assets/headers/travel.webp'
 ---
 
 They say that seeing new places can work wonders for your creativity. I've recently gone on a trip to Seattle, visiting the Microsoft MVP Summit. With half an hour to kill in between sessions, I started tinkering with another UI sample in Xamarin Forms. This is the result of that.

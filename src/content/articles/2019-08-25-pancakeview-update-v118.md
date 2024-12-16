@@ -3,7 +3,7 @@ title: Breaking the Pancake mould
 pubDate: 2019-08-25
 slug: pancakeview-update-v118
 tags: ["xamarin"]
-image: '../../assets/headers/pancakes.jpg'
+image: '../../assets/headers/pancakes.webp'
 ---
 You may have used `PancakeView` in your Xamarin.Forms adventures in the past. Ever dreamed of breaking out of that rectangular/circular mould? Well, now you can with the latest `PancakeView` update!
 

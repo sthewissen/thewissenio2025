@@ -3,7 +3,7 @@ title: Getting started with creating your own NuGet package
 pubDate: 2019-09-11
 slug: getting-started-with-creating-your-own-nuget-package
 tags: ["xamarin"]
-image: '../../assets/headers/wood.jpg'
+image: '../../assets/headers/wood.webp'
 ---
 Have you always wanted to create your own NuGet package but not quite sure where to start? Let's take a peek at how I built my [Xamarin NuGet packages](https://www.thewissen.io/a-quick-explainer-recent-nuget-packages/) and how I distribute them using Azure DevOps!
 

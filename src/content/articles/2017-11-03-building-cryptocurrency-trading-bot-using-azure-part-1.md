@@ -3,7 +3,7 @@ title: Building a cryptocurrency trading bot using Azure - Part 1
 pubDate: 2017-11-03
 slug: building-cryptocurrency-trading-bot-using-azure-part-1
 tags: ["xamarin"]
-image: '../../assets/headers/scrooge.jpg'
+image: '../../assets/headers/scrooge.webp'
 ---
 
 Want to get rich quickly? Want to earn money while you sleep? Even though it sounds amazing these are the kind of things you can achieve simply by building a cryptocurrency trading bot which you can host in Azure!

@@ -3,7 +3,7 @@ title: Fixing a partial button ripple effect on Samsung devices
 pubDate: 2020-01-21
 slug: fixing-partial-button-ripple-effect-on-samsung-devices
 tags: ["xamarin"]
-image: '../../assets/headers/ripple.jpg'
+image: '../../assets/headers/ripple.webp'
 ---
 While building our latest Xamarin app we recently ran into an issue where a button on Android would only have a partial ripple effect. This post explores the workaround we ended up implementing.  
 

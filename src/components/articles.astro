@@ -57,6 +57,7 @@ const posts = (await getCollection("articles"))
               alt={featuredPost[0].title}
               quality={100}
               height={250}
+              loading="eager"
               class="w-full relative object-cover transition-all duration-300 hover:scale-110"
             />
           </a>

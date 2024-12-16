@@ -3,7 +3,7 @@ title: So you want to be Xamarin Certified?
 pubDate: 2016-04-02
 tags: ["xamarin"]
 slug: so-you-want-to-be-xamarin-certified
-image: '../../assets/headers/monkeys.jpg'
+image: '../../assets/headers/monkeys.webp'
 ---
 
 Last Wednesday I completed my Xamarin University exam which means I can call myself a Xamarin Mobile Certified Developer for the next year. I had planned on writing about the experience but some other recent Xamarin news which was announced the day after has kept me busy.

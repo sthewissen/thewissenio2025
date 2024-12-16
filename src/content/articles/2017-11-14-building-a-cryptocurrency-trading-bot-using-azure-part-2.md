@@ -3,7 +3,7 @@ title: Building a cryptocurrency trading bot using Azure &ndash; Part 2
 pubDate: 2017-11-14
 slug: building-a-cryptocurrency-trading-bot-using-azure-part-2
 tags: ["xamarin"]
-image: '../../assets/headers/tools.jpg'
+image: '../../assets/headers/tools.webp'
 ---
 
 In [part 1 of this tutorial series](https://www.thewissen.io/building-cryptocurrency-trading-bot-using-azure-part-1/) we built a trading bot using an Azure Function. In this 2nd part we will create a simple mobile app to keep track of what our bot is doing. Since it's still a robot we also want to control it a bit simply to prevent our robot overlords from taking over.

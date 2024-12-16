@@ -2,7 +2,7 @@
 title: 'dotNETConf - First speaking gig: A retrospective'
 pubDate: 2020-04-09
 slug: dotnetconf-first-speaking-gig-a-retrospective
-image: '../../assets/headers/empty.jpg'
+image: '../../assets/headers/empty.webp'
 tags: ["xamarin"]
 ---
 I had the privilege of being asked to speak at the latest dotNETConf, which completely focussed on Xamarin. My very first speaking gig, but how did I end up there and what was it like? In this post, I will share some thoughts.

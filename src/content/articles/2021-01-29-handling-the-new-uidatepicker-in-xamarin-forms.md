@@ -2,7 +2,7 @@
 title: Handling the new UIDatePicker in Xamarin.Forms
 pubDate: 2021-01-29
 slug: handling-the-new-uidatepicker-in-xamarin-forms
-image: '../../assets/headers/agenda.jpeg'
+image: '../../assets/headers/agenda.webp'
 tags:  ["xamarin", "xamarin.forms", "ui"]
 ---
 In iOS14, Apple introduced us to a new UIDatePicker. However, you may want to revert back to the old wheel-like style. How can we do it? Let's check it out!

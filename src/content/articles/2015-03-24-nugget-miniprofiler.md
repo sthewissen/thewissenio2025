@@ -3,7 +3,7 @@ title: 'NuG(g)et: MiniProfiler'
 pubDate: 2015-03-24
 tags: ["nuget", ".net"]
 slug: nugget-miniprofiler
-image: "../../assets/headers/snail.jpg"
+image: "../../assets/headers/snail.webp"
 ---
 
 When using Entity Framework (or any other ORM for that matter) you always have to be aware of the queries you send to the database. When using a feature like lazy loading it's fairly easy to create an N+1 query problem which makes you send more queries to the database than you should. MiniProfiler could help you out in this situation.

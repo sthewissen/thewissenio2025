@@ -2,7 +2,7 @@
 title: Improving the touch targets in your apps using Xamarin.Forms
 pubDate: 2020-11-20
 slug: improving-the-touch-targets-in-your-apps-using-xamarin-forms
-image: '../../assets/headers/target.jpeg'
+image: '../../assets/headers/target.webp'
 tags:  ["xamarin", "xamarin.forms", "ui"]
 ---
 We can interact with our phones in different ways, but the most commonly used one is through touch. But what makes for good touch targets and how can we improve upon what we get out of the box in Xamarin.Forms? Let's take a look!

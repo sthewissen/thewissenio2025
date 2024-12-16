@@ -3,7 +3,7 @@ title: Creating a simple but good-looking app tutorial
 pubDate: 2018-03-19
 slug: simple-good-looking-app-tutorial
 tags: ["xamarin"]
-image: '../../assets/headers/walk.jpg'
+image: '../../assets/headers/walk.webp'
 ---
 
 A lot of apps currently in stores have some sort of walkthrough or tutorial screen that walks you through the basic functionality of an app. Let's see what kind of things go into making one of those shall we?

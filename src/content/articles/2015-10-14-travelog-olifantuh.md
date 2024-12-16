@@ -3,7 +3,7 @@ title: 'Travelog: Olifantuh!'
 pubDate: 2015-10-14
 tags: ["travel", "dutch"]
 slug: travelog-olifantuh
-image: "../../assets/headers/chiang-mai1.jpg"
+image: "../../assets/headers/chiang-mai1.webp"
 ---
 
 Het weer in Chiang Mai is al wat meer opgeklaard wanneer we deze morgen wakker worden om ons klaar te maken voor een dagje olifanten verzorgen in een opvangpark. Er is zelfs een lekker warm zonnetje terwijl de berichten van mogelijke sneeuw en het collectieve falen van het Nederlands Elftal ons bereiken. Ik kan om beiden niet rouwig zijn.

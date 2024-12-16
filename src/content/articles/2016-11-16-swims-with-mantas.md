@@ -3,7 +3,7 @@ title: 'Travelog: Swims with Mantas'
 pubDate: 2016-11-16
 tags: ["travel", "dutch"]
 slug: swims-with-mantas
-image: '../../assets/headers/manta.jpg'
+image: '../../assets/headers/manta.webp'
 ---
 
 Een snorkeltripje naar het dichtbij gelegen eiland Nusa Lembongan, dat leek ons wel wat. Althans, na de vrouw ervan overtuigd te hebben dat kwallen en haaien hier waarschijnlijk niet zitten.

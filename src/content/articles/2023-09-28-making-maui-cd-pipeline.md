@@ -2,7 +2,7 @@
 title: Building a .NET MAUI CD pipeline in GitHub Actions
 pubDate: 2023-09-28
 slug: making-maui-cd-pipeline
-image: "../../assets/headers/pipeline.jpg"
+image: "../../assets/headers/pipeline.webp"
 tags: ["maui", "continuous-delivery", "github-actions"]
 excerpt: In this first post I look to cover building a GitHub Actions pipeline that can build your .NET MAUI application for both Android and iOS and get it all the way to the Google Play Store and Apple AppStore for testing. 
 ---

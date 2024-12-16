@@ -3,7 +3,7 @@ title: 'Travelog: Rustig aan...'
 pubDate: 2015-10-21
 slug: travelog-rustig-aan
 tags: ["travel", "dutch"]
-image: "../../assets/headers/thailand-03-copy.jpg"
+image: "../../assets/headers/thailand-03-copy.webp"
 ---
 
 Je hebt van die dagen op vakantie dat je het rustig aan doet. Relatief gezien was het vandaag zo'n dag. Vrij vroeg worden we wakker omdat we op het dak regen horen plenzen. Aangezien we vandaag naar een uitkijkpunt wilden is dat verre van ideaal. Wanneer de regen stopt horen we nog meer gestommel op het dak, maar sukkelen we toch weer in slaap.

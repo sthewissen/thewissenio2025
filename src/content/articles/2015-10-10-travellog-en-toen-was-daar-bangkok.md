@@ -3,7 +3,7 @@ title: 'Travelog: En toen was daar Bangkok...'
 pubDate: 2015-10-10
 tags: ["travel", "dutch"]
 slug: travellog-en-toen-was-daar-bangkok
-image: "../../assets/headers/eva-air1.jpg"
+image: "../../assets/headers/eva-air1.webp"
 ---
 
 "Travel broadens the mind" zeggen ze wel eens. Alhoewel, het feit dat je eerst een uur of 11 je eigen vierkante meter of minder aan vliegtuig tot je beschikking hebt anders doet vermoeden.

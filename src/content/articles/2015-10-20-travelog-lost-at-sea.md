@@ -3,7 +3,7 @@ title: 'Travelog: Lost at sea...'
 pubDate: 2015-10-20
 slug: travelog-lost-at-sea
 tags: ["travel", "dutch"]
-image: "../../assets/headers/phuket1.jpg"
+image: "../../assets/headers/phuket1.webp"
 excerpt: Daar dobberen we dan. Een bootje met een man of 15 dat stil ligt tussen de twee eilanden Koh Phi Phi Don en Koh Phi Phi Leh. Een kapitein die met een autoband, schroevendraaier en stuk touw het stuursysteem probeert te fixen en een aantal mensen op de boot die de neiging om te kotsen hard moeten onderdrukken.
 ---
 

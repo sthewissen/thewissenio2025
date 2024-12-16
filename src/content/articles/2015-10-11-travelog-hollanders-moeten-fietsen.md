@@ -3,7 +3,7 @@ title: 'Travelog: Hollanders moeten fietsen...'
 pubDate: 2015-10-11
 tags: ["travel", "dutch"]
 slug: travelog-hollanders-moeten-fietsen
-image: "../../assets/headers/bangkok4.jpg"
+image: "../../assets/headers/bangkok4.webp"
 ---
 
 Wil je in Bangkok eens wat anders zien moet je een fietstoer pakken is ons gezegd. Die raad hebben we dan ook opgevolgd door om 7 uur in de morgen klaar te staan voor een 5 uur durende tour met een fiets zonder versnelling en piepende remmen. Op z'n zachtst gezegd even wennen.

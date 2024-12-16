@@ -3,7 +3,7 @@ title: Packaging your legacy dlls with NuGet
 pubDate: 2016-08-08
 tags: ["xamarin"]
 slug: packaging-legacy-dlls-nuget
-image: '../../assets/headers/packages.jpg'
+image: '../../assets/headers/packages.webp'
 ---
 
 When developing applications you inevitably encounter a piece of legacy code. In our case this code was put into DLL files that were being used by quite a lot projects. However, when you want to move towards automated builds using e.g. Visual Studio Team Services (which we will be using in this example) it will not have access to wherever you have these DLLs stored. The build is being made in the cloud after all. So how do you go about packaging your legacy DLLs into NuGet packages and hosting them in your own corporate feed?

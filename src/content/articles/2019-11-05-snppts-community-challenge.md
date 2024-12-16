@@ -3,7 +3,7 @@ title: Introducing the Snppts Community Challenge!
 pubDate: 2019-11-05
 slug: snppts-community-challenge
 tags: ["xamarin"]
-image: '../../assets/headers/scissors-1.jpg'
+image: '../../assets/headers/scissors-1.webp'
 ---
 As you probably know I'm one of the co-founders of [the Snppts platform](https://www.thewissen.io/out-now-snppts-for-xamarin-forms/) together with my bestie Gerald Versluis. This month of November is all about getting more content into the platform and what better way to do it than with a Community Challenge!
 

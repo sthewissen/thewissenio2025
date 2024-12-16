@@ -3,7 +3,7 @@ title: Creating a parallax carousel in Xamarin.Forms
 pubDate: 2018-10-09
 slug: creating-a-parallax-carousel-in-xamarin-forms
 tags: ["xamarin"]
-image: '../../assets/headers/carousel.jpg'
+image: '../../assets/headers/carousel.webp'
 ---
 
 A while ago I wrote [a small tutorial](https://www.thewissen.io/simple-good-looking-app-tutorial/) on creating a simple carousel for your Xamarin.Forms app. That post also showed off a cool parallax effect on a carousel. I've always wanted to come back to that effect, let's get this show on the road!

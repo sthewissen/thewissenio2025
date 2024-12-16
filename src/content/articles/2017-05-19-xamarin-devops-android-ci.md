@@ -3,7 +3,7 @@ title: 'Xamarin and DevOps: Setting up your Android CI'
 pubDate: 2017-05-19
 tags: ["xamarin"]
 slug: xamarin-devops-android-ci
-image: '../../assets/headers/droid.jpg'
+image: '../../assets/headers/droid.webp'
 ---
 
 This is the second post in a series on getting started with DevOps in a Xamarin project. In this post we will be looking at automating the build process which gives you the advantages of improving your code quality, takes away tedious tasks and compiles a history of builds and releases in order to investigate issues. So let's get started with the Android side of things!

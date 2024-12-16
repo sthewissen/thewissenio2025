@@ -3,7 +3,7 @@ title: 'Xamarin and DevOps: Versioning your app'
 pubDate: 2017-06-07
 slug: xamarin-devops-versioning
 tags: ["xamarin"]
-image: '../../assets/headers/cakenumbers.jpg'
+image: '../../assets/headers/cakenumbers.webp'
 ---
 
 This is the 4th post in the Xamarin and DevOps series. The topic at hand is versioning of your mobile app. Having a standardised version number helps you track your releases and issues that might occur in them and especially when using tools like HockeyApp or Xamarin Insights it can also help you to track these issues. 

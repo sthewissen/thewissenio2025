@@ -3,7 +3,7 @@ title: Create a kickass banking app using a BasePage in Xamarin
 pubDate: 2019-07-02
 slug: create-a-kickass-banking-app-using-a-basepage-in-xamarin
 tags: ["xamarin"]
-image: '../../assets/headers/piggy.jpg'
+image: '../../assets/headers/piggy.webp'
 ---
 
 Have you ever had a scenario where using the built-in navigation bar and other UI elements simply didn't cut it? Perhaps it's been suggested to you by a designer that the default elements are just ugly. Simply roll your own and start using a base page! 

@@ -3,7 +3,7 @@ title: 'A quick explainer: recent NuGet packages'
 pubDate: 2019-05-21
 slug: a-quick-explainer-recent-nuget-packages
 tags: ["xamarin"]
-image: '../../assets/headers/rainbows.jpg'
+image: '../../assets/headers/rainbows.webp'
 ---
 
 Recently I've been pushing out a few NuGet packages with components that I use in my every day Xamarin work. This blog post is meant to give you a little overview of these packages and how they can help you in your daily mobile development flow.

@@ -3,7 +3,7 @@ title: 'Travelog: Rijst - How do they do it?'
 pubDate: 2016-11-12
 tags: ["travel", "dutch"]
 slug: travelog-rijst-how-do-they-do-it
-image: '../../assets/headers/bali10.jpg'
+image: '../../assets/headers/bali10.webp'
 ---
 
 Rijst. We eten het allemaal wel eens, maar hoe gaat het van een zompig veld naar een mooie rijstkorrel? How do they do it?

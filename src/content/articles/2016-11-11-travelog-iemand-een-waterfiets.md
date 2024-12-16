@@ -3,7 +3,7 @@ title: 'Travelog: Iemand een waterfiets over?'
 pubDate: 2016-11-11
 tags: ["travel", "dutch"]
 slug: travelog-iemand-een-waterfiets
-image: '../../assets/headers/bali11.jpg'
+image: '../../assets/headers/bali11.webp'
 ---
 
 Op Bali bevinden zich een aantal vulkanen en het landschap is er erg bergachtig. Het leek ons een goed plan om boven op een berg gedropt te worden en met de fiets door de binnenlanden af te dalen.

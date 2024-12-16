@@ -3,7 +3,7 @@ title: Xamarin.Forms ListView grouping and styling the jump list
 pubDate: 2017-08-30
 slug: xamarin-forms-listview-grouping
 tags: ["xamarin"]
-image: '../../assets/headers/cardcatalog-1.jpg'
+image: '../../assets/headers/cardcatalog-1.webp'
 ---
 
 When creating a Xamarin Forms application there's almost no getting around using a `ListView` component at some point. When you have a lot of items to display you might even consider adding `ListView` grouping. But how does that work?

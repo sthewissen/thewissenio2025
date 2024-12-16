@@ -3,7 +3,7 @@ title: 'Travelog: Een hutje in de jungle...'
 pubDate: 2015-10-17
 tags: ["travel", "dutch"]
 slug: travelog-een-hutje-in-de-jungle
-image: "../../assets/headers/jungle.jpg"
+image: "../../assets/headers/jungle.webp"
 ---
 
 Daar lig je dan in een bamboehutje ergens hoog op een berg in Thailand waar krekels de hele avond lang hun getjirp niet stil kunnen houden en het aantal gevonden WiFi netwerken welgeteld 0 is.
