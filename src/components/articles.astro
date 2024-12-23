@@ -63,9 +63,12 @@ const posts = (await getCollection("articles"))
           </a>
         </div>
         <div class="mt-4">
-          <p class="text-sm font-header text-brand-dark uppercase font-semibold">
-            {featuredPost[0].date}
-          </p>
+            <p class="text-sm font-header text-brand-dark uppercase font-semibold">
+              {featuredPost[0].date}
+              <span class="inline-block px-2 text-xs text-white bg-brand rounded-full">
+                NEW
+              </span>
+            </p>
           <h2 class="text-3xl font-header font-bold hover:underline">
             <a href={featuredPost[0].link} class="cursor-pointer"
               >{featuredPost[0].title}</a
