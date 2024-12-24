@@ -3,6 +3,7 @@ import Layout from "../layouts/layout.astro";
 import { getCollection } from "astro:content";
 import { config } from "../../my.config";
 import { Image } from 'astro:assets';
+import Icon from "../components/icon.astro";
 
 export async function getStaticPaths() {
   const articles = await getCollection("articles");
@@ -69,6 +70,36 @@ const metadata = {
     <article class="markdown-content prose prose-md max-w-3xl mx-auto text-gray-700">
       <Content />
     </article>
+
+    <!-- Share it -->
+     <!-- Share Section -->
+<section class="py-8 mt-12 bg-gray-100">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-xl font-header font-bold text-gray-900">Share this Post</h2>
+    <p class="text-gray-600 mt-2">Spread the word! Share this article on BlueSky or copy the link below to paste it anywhere — whether it's in your group chat, a carrier pigeon message, or a note in a bottle. The possibilities truly are endless.</p>
+    
+    <!-- Buttons -->
+    <div class="flex justify-center mt-6 gap-4">
+      <!-- BlueSky Share Button -->
+      <a
+        href={`https://bsky.app/intent/compose?text=${encodeURIComponent(metadata.pageUrl)}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block px-6 py-2 bg-brand text-white font-semibold shadow cursor-pointer hover:bg-brand-dark transition"
+      >
+        Share on BlueSky
+      </a>
+
+      <!-- Copy Permalink Button -->
+      <button
+        class="inline-block px-6 py-2 bg-gray-300 text-gray-800 font-semibold cursor-pointer shadow hover:bg-gray-200 transition"
+        onclick={`navigator.clipboard.writeText('${metadata.pageUrl}'); alert('Permalink copied to clipboard!');`}
+      >
+        Copy Permalink
+      </button>
+    </div>
+  </div>
+</section>
 
     <!-- Navigation -->
     <nav class="flex max-w-3xl mx-auto justify-between mt-12">
