@@ -87,7 +87,7 @@ Crosswind follows the same core principles as Tailwind. Class names are structur
 
 From a technical perspective this MAUI-compatible stylesheet is loaded into a Resource Dictionary in .NET MAUI as soon as you call the `CrosswindInitializer.Init()` method in your `App.cs`. This means you have instant access to all of these classes and they also play nice with Hot Reload when debugging. I won't list an entire reference sheet of all the available classes here, but have documented them [on the wiki pages](https://github.com/sthewissen/Plugin.Maui.Crosswind/wiki) of the plugin.
 
-## Customizating to your hearts content
+## Customizing to your hearts content
 
 A big part of Tailwind's appeal is its flexibility through customization. You can define your own spacing scale, extend or replace the default color palette, add custom fonts, and even create entirely new utility classes using plugins or configuration tweaks. In .NET MAUI, while the `StyleClass` system offers a foundation for utility-style styling, it's more limited in terms of dynamic configuration.
 
@@ -187,4 +187,4 @@ dotnet add package Plugin.Maui.Crosswind
 
 **Links to learn more:**
 - [The Crosswind repo](https://github.com/sthewissen/Plugin.Maui.Crosswind)
-- [Official Tailwind docs]()
+- [Official Tailwind docs](https://tailwindcss.com/)
