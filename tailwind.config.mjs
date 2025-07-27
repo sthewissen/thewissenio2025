@@ -75,6 +75,10 @@ export default {
 			backgroundColor: '#31ceaf', // Background color when highlighted
 			color: '#ffffff', // Text color when highlighted
 		  },
+		  "article img": {
+			marginLeft: 'auto',
+			marginRight: 'auto'
+		  }
 		});
 	  },
 	  require('@tailwindcss/typography')
