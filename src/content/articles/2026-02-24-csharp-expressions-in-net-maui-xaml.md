@@ -83,7 +83,7 @@ That's it. As simple as adding an exclamation mark.
 Beyond negation, you can also combine boolean properties into expressions. Want to enable a button only when the user has an account *and* has agreed to the terms?
 
 ```xml
-<Button IsEnabled="HasAccount &amp;&amp; AgreeToTerms" />
+<Button IsEnabled="{HasAccount &amp;&amp; AgreeToTerms}" />
 ```
 
 The `&amp;&amp;` is unfortunately required because XAML is XML and the ampersand character has special meaning there. It's not the prettiest, but it's a lot better than setting up a multi-binding with a converter just to perform an AND check. There's also talk of supporting keywords like `and` as an alternative, which would clean this up further.
