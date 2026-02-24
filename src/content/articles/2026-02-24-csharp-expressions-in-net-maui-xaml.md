@@ -88,14 +88,6 @@ Beyond negation, you can also combine boolean properties into expressions. Want 
 
 The `&amp;&amp;` is unfortunately required because XAML is XML and the ampersand character has special meaning there. It's not the prettiest, but it's a lot better than setting up a multi-binding with a converter just to perform an AND check. There's also talk of supporting keywords like `and` as an alternative, which would clean this up further.
 
-If you want to avoid the double `&amp;` entirely, you can also wrap the expression in a CDATA block:
-
-```xml
-<Button IsEnabled="<![CDATA[HasAccount && AgreeToTerms]]>" />
-```
-
-Neither option is winning any beauty contests, but both get the job done without a converter in sight. Let's wait for keyword support to finalize this little tidbit, but again; a massive improvement over what we have right now.
-
 ## Lambda event handlers
 
 C# expressions also extend to event handlers. Instead of pointing to a method name, you can write an inline lambda:
@@ -105,7 +97,7 @@ C# expressions also extend to event handlers. Instead of pointing to a method na
 <Button Clicked="OnButtonClicked" Text="Click me" />
 
 <!-- New way -->
-<Button Clicked="(s, e) => ViewModel.ClickCount++" Text="Click me" />
+<Button Clicked="{(s, e) => ViewModel.ClickCount++}" Text="Click me" />
 ```
 
 For simple one-liners this is a nice convenience. For anything more complex, you'll probably still want a named method in your code-behind. For me, this simple increment lambda already looks a bit icky, so I probably won't be using this feature as much. From a testability perspective this is probably also better done in a method somewhere that gets tested. However, for quick interactions it removes the need to jump around the file just to find a method that increments a counter.
